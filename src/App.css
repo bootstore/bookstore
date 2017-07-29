@@ -1,0 +1,39 @@
+
+*{
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.6777px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 385px) {
+  html {
+    font-size: 51.33333px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px; } }
+

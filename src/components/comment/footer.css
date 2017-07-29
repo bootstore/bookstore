@@ -1,0 +1,48 @@
+
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #747474;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:100%;
+    height:1.2rem;
+    background: #ffffff;
+    display: flex;
+}
+.dibu {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dibu .page {
+    width:33%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .2rem;
+    color: #747474;
+}
+
+.dibu .icon{
+    font-size: 0.5rem;
+}
+
+.page.active .icon{
+    color: red;
+}
+
+.page.active .tiao .ye i{
+    color: red;
+}

@@ -1,0 +1,453 @@
+.goodsDetails{
+    background:#f9f9f9;
+}
+/*头部*/
+.goodsDetails .header{
+    width:100%;
+    height:0.88rem;
+    padding:0 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+.goodsDetails .header span{
+    font-size: 0.34rem;
+}
+.goodsDetails .header ul{
+    width:0.45rem;
+}
+.goodsDetails .header .back{
+    width:0.44rem;
+    height:0.44rem;
+    background-image: url("/img/gjimg/good_5.png");
+    background-size: 0.42rem 0.36rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*banner */
+.goodsDetails .banner{
+    height:6rem;
+}
+/*中间*/
+.goodsDetails .con{
+    width:100%;
+    height:auto;
+    padding-top: 0.35rem;
+    border-bottom:1px solid #e5e5e5;
+    background:#fff;
+}
+.goodsDetails .con .top{
+    width:100%;
+    height:auto;
+}
+.goodsDetails .con .top .name{
+    padding:0 0.24rem  0 0.24rem;
+    box-sizing: border-box;
+    font-size: 0.3rem;
+}
+.goodsDetails .con .top .price{
+    font-size: 0.28rem;
+    color:red;
+    padding:0.1rem 0.24rem 0rem 0.24rem;
+    box-sizing: border-box;
+}
+.goodsDetails .con .top .oprice{
+    font-size:0.24rem;
+    font-weight:200;
+    color:#ccc;
+    text-decoration: line-through;
+    padding:0.1rem 0.24rem 0.1rem 0.24rem;
+    box-sizing: border-box;
+}
+.goodsDetails .con .freight{
+    margin-left: 0.24rem;
+    width:calc(100% - 0.24rem);
+    height:0.78rem;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    padding:0 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.goodsDetails .con .freight p{
+    font-size: 0.24rem;
+    color:#999;
+}
+.goodsDetails .con .activity{
+    width:100%;
+    height:0.96rem;
+    padding:0 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.goodsDetails .con .activity .left{
+    width:auto;
+    height:auto;
+    display: flex;
+}
+.goodsDetails .activity .fullcut{
+    width:0.6rem;
+    height:0.35rem;
+    border:1px solid #ff4444;
+    color:#ff4444;
+    font-size:0.24rem;
+    border-radius:0.1rem;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.24rem;
+}
+.goodsDetails .activity h6{
+    font-size: 0.24rem;
+    font-weight: 400;
+}
+.goodsDetails .more{
+    width:0.22rem;
+    height:0.25rem;
+    background-image: url("/img/gjimg/goodDetalis.png");
+    background-size: cover;
+}
+/*版本*/
+.goodsDetails .edition{
+    width:100%;
+    height:0.88rem;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top:0.21rem;
+    margin-bottom: 0.21rem;
+    background: #fff;
+    padding:0 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*标签*/
+.goodsDetails .label{
+    width:100%;
+    height:0.9rem;
+    background:#fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display:flex;
+    align-items: center;
+    padding:0 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+    margin-top:0.21rem;
+    margin-bottom: 0.21rem;
+}
+.goodsDetails .label .img{
+    width:0.26rem;
+    height:0.26rem;
+    background-image: url("/img/gjimg/goodsDetails_01.png");
+    background-size: cover;
+    display: block;
+    float: left;
+    margin-right: 0.15rem;
+}
+.goodsDetails .label span{
+    font-size: 0.24rem;
+    display: block;
+    float: left;
+    margin-right: 0.2rem;
+}
+.goodsDetails .edition h6{
+    font-size: 0.28rem;
+    font-weight: 400;
+}
+
+/*商品详情*/
+.goodsDetails .details{
+    width:100%;
+    height:auto;
+    background:#fff;
+    padding:0.3rem 0.24rem 0.3rem 0.24rem;
+    box-sizing: border-box;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.goodsDetails .details img{
+    width:100%;
+    height:auto;
+}
+/*底部*/
+.goodsDetails .footer{
+    width:100%;
+    height:1rem;
+    border:1px solid #e5e5e5;
+    position: fixed;
+    bottom:0;
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+}
+.goodsDetails .footer a:first-child,.goodsDetails .footer a:nth-child(2){
+     width:1.2rem;
+    text-decoration:none;
+     height:100%;
+     border-right: 1px solid #e5e5e5;
+     background-image: url("/img/gjimg/good_10.png");
+     background-size: 0.55rem 0.5rem;
+     background-position: center 0.05rem;
+     background-repeat: no-repeat;
+    font-size: 0.24rem;
+    color:#696969;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.6rem;
+ }
+.goodsDetails .footer a:nth-child(2){
+    background-image: url("/img/gjimg/good_07.png");
+}
+.goodsDetails .footer div:nth-child(3),.goodsDetails .footer div:nth-child(4){
+    width:2.55rem;
+    height:100%;
+    background: #ff8855;
+    font-size: 0.3rem;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goodsDetails .footer div:nth-child(4){
+    background: #ff4444;
+}
+
+
+
+
+
+
+
+
+
+/*蒙版*/
+.goodsDetails .masks{
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    z-index: 9;
+}
+/*店铺详情*/
+.goodsDetails .mask .store{
+    width:100%;
+    height:2.65rem;
+    position:fixed;
+    bottom:-2.65rem;
+    background: #fff;
+    z-index: 9999;
+    transition:all 0.2s linear;
+}
+.goodsDetails .mask .store.hot{
+    transform:translateY(-2.65rem);
+}
+.goodsDetails .mask .store .title{
+    width:100%;
+    height:0.9rem;
+    font-size: 0.3rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goodsDetails .mask .store .activity{
+    width:100%;
+    height:0.76rem;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    padding:0 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+}
+.goodsDetails .mask .close{
+    width:100%;
+    height:calc(2.65rem - 0.9rem - 0.76rem);
+    background: #ff4444;
+    font-size: 0.3rem;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: fixed;
+    bottom:0;
+    z-index: 99999;
+}
+
+/*加入购物车*/
+.goodsDetails .mask .cart{
+    width:100%;
+    height:auto;
+    background: #fff;
+    position:fixed;
+    bottom:-6.27rem;
+    padding:0 0.24rem 0 0.24rem;
+    box-sizing: border-box;
+    z-index: 99;
+    transition: all 0.3s linear;
+}
+.goodsDetails .mask .cart.hot{
+    transform:translateY(-6.27rem);
+}
+.goodsDetails .mask .cart .top{
+    width:100%;
+    height:1.64rem;
+    border-top: 1px solid rgba(0,0,0,0);
+}
+.goodsDetails .mask .cart .top .img{
+    display: block;
+    width:1.6rem;
+    height:1.6rem;
+    border:1px solid #eaeaea;
+    border-radius: 0.2rem;
+    margin-top: -0.2rem;
+    float:left;
+}
+.goodsDetails .mask .cart .top p{
+    width:4.38rem;
+    height:0.3rem;
+    font-size: 0.24rem;
+    float:left;
+    margin-left: 0.3rem;
+    margin-top: 0.25rem;
+    overflow: hidden;
+}
+.goodsDetails .mask .cart .top h3{
+    color:#ff4444;
+    font-size:0.3rem;
+    float:left;
+    margin-left: 0.3rem;
+    margin-top: 0.25rem;
+}
+.goodsDetails .mask .cart .closes{
+    width: 0.44rem;
+    height:0.44rem;
+    background-image: url("/img/gjimg/close_03.png");
+    background-size: cover;
+    float:right;
+    margin-top:-0.3rem;
+    font-size: 0;
+}
+.goodsDetails .mask .editions{
+    width:100%;
+    height:auto;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding:0.25rem 0 0.25rem 0;
+    box-sizing: border-box;
+}
+.goodsDetails .mask .editions h3{
+    font-size: 0.24rem;
+    font-weight: 400;
+}
+.goodsDetails .mask .editions .class{
+    width:100%;
+    height:auto;
+    padding:0.2rem 0 0.2rem 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.goodsDetails .mask .editions .class div{
+    width:auto;
+    padding:0 0.1rem 0 0.1rem;
+    box-sizing: border-box;
+    height:0.55rem;
+    border:1px solid #e5e5e5;
+    border-radius: 0.1rem;
+    margin-right: 0.32rem;
+    font-size: 0.24rem;
+    color:#999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goodsDetails .mask .editions .class div.hot{
+    background: #ff4444;
+    color:#fff;
+}
+.goodsDetails .mask .cart .number{
+    width:100%;
+    height:2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.goodsDetails .mask .cart .number .num{
+    width:1.5rem;
+    height:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+}
+.goodsDetails .mask .cart .number .num h1{
+    font-size: 0.26rem;
+}
+.goodsDetails .mask .cart .number .num span{
+    display: block;
+    font-size: 0.24rem;
+    color:#ccc;
+}
+.goodsDetails .mask .cart .number .numbox{
+    width:2.2rem;
+    height:0.54rem;
+    border:1px solid #ebebeb;
+    background: #f8f8f8;
+    border-radius:0.1rem;
+    margin-top: 0.24rem;
+    display: flex;
+}
+.goodsDetails .mask .cart .number .numbox li{
+    width:32%;
+    height:100%;
+    border:0.01rem solid #acacac;
+    display: flex;
+    color:#888888;
+    font-size: 0.3rem;
+    align-items: center;
+    justify-content: center;
+}
+.goodsDetails .mask .cart .number .numbox li.hot{
+    border:0.01rem solid rgba(0,0,0,0);
+}
+.goodsDetails .message{
+    width:4rem;
+    height:0.8rem;
+    background:rgba(0,0,0,0.5);
+    position: fixed;
+    left:50%;
+    margin-left: -2rem;
+    top:50%;
+    margin-top: -0.4rem;
+    border-radius: 0.2rem;
+    color:#fff;
+    font-size: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+.goodsDetails .prompt{
+    width:100%;
+    height:0.5rem;
+    background: #ff4444;
+    position: fixed;
+    top:-0.5rem;
+    font-size: 0.24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    transition: all 0.2s linear;
+}
+.goodsDetails .prompt.hot{
+    transform: translateY(0.5rem);
+}

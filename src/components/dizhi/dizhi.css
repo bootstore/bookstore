@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /*box-sizing:border-box;*/
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+@media screen and (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+@media screen and (min-width: 412px) {
+    html {
+        font-size: 54.93333px;
+    }
+}
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 80px;
+    }
+}
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+.aaa{
+    width:100%;
+    height:auto;
+    overflow:hidden
+}
+.head{
+    width:7.5rem;
+    height:0.88rem;
+
+    padding-top:0.01rem;
+}
+.close{
+    width:0.9rem;
+    height:0.6rem;
+
+    margin-top:0.14rem;
+    margin-left:0.2rem;
+    float:left;
+}
+.close img{
+    display:block;
+    width:0.6rem;
+    height:0.6rem;
+}
+.xian{
+    float:left;
+    width:0.04rem;
+    height:0.6rem;
+    background:#ececec;
+    margin-top:0.14rem;
+}
+.choose{
+    width:3rem;
+    height:0.6rem;
+
+    float:left;
+    margin-left:0.2rem;
+    margin-top:0.14rem;
+    color:#000;
+    font-size:0.4rem;
+
+}
+.menu{
+    width:0.2rem;
+    height:0.6rem;
+    float:right;
+    margin-right:0.2rem;
+
+    margin-top:0.14rem;
+}
+.menu img{
+    width:0.16rem;
+    height:0.6rem;
+    display:block;
+}
+.xiahuaxian{
+    width:100%;
+    height:0.03rem;
+    background:#e1e1e1;
+}
+.names{
+    width:100%;
+    height:1.2rem;
+    position:relative;
+}
+.name h1{
+    line-height:1.2rem;
+    font-size:0.3rem;
+    color:#303030;
+    margin-left:0.3rem;
+    font-weight:400;
+    float:left;
+}
+#name1{
+    border:none;
+    width:5.7rem;
+    height:100%;
+    margin-left:0.6rem;
+    float:left;
+    font-size:0.3rem;
+      outline:medium;
+}
+#phone{
+    border:none;
+    width:5.7rem;
+    height:100%;
+    margin-left:0.3rem;
+    float:left;
+    font-size:0.3rem;
+    outline:medium;
+}
+#province{
+    width:1.8rem;
+    height:0.4rem;
+    margin-left:0.2rem;
+
+}
+
+#form{
+    width:100%;
+    height:3rem;
+    margin-left:0.3rem;
+    display:block;
+    position:absolute;
+    left:1.25rem;
+    top:-0.3rem;
+
+
+}
+.xiahuaxian1{
+    width:100%;
+    height:0.03rem;
+    background:#e4e4e4;
+    margin-left:0.3rem;
+}
+
+.save{
+    width:6.8rem;
+    height:1.1rem;
+    background:#43bc00;
+    margin:0 auto;
+    margin-top:0.2rem;
+    text-align:center;
+    line-height:1.1rem;
+    color:#fff;
+    font-size:0.3rem;
+}
+.cancel{
+    width:6.8rem;
+    height:1.1rem;
+    border:1px solid #e5e5e5;
+    margin:0 auto;
+    margin-top:0.2rem;
+    text-align:center;
+    line-height:1.1rem;
+    color:#2d2d2d;
+    font-size:0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

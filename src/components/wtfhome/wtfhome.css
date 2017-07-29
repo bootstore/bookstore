@@ -1,0 +1,252 @@
+.wtfhead{
+    height:0.88rem;
+    width: 100%;
+    padding:0.2rem 0.3rem;
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 9999999999;
+    background: #ffffff;
+}
+.wtfout{
+    height:0.33rem;
+    width:0.33rem;
+    margin-top:0.07rem;
+}
+.wtfout img{
+    height:100%;
+    width:100%;
+}
+.shu{
+    height:100%;
+    width:0.02rem;
+    background: #9f9f9f;
+    margin-left:0.33rem;
+}
+.wtftitle{
+    font-size: 0.35rem;
+    margin-left:0.25rem;
+    font-weight: bold;
+    line-height: 0.48rem;
+}
+.wtfdiandian{
+    height:0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    right:0.3rem;
+}
+.wtfdiandian img{
+    width: 0.08rem;
+    height:0.43rem;
+    position: absolute;
+    right:0;
+    top:0.02rem;
+}
+.wtfbanner{
+    width:100%;
+}
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 2.4rem;
+    overflow: hidden;
+}
+.ant-carousel .slick-slide img{
+    height:100%;
+    width:100%;
+}
+#root .ant-carousel .slick-dots li button{
+    height:0.16rem;
+    width:0.16rem;
+    border-radius: 50%;
+    background: #505050;
+}
+#root .ant-carousel .slick-dots li.slick-active button{
+    background: #000000;
+}
+.wtfbig1{
+    height:4.2rem;
+    width:100%;
+}
+.wtfbig1>img{
+    height:100%;
+    width:100%;
+}
+.wtfnav1{
+    height:0.9rem;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    border-top:0.02rem solid #e9e9e9;
+    border-bottom:0.02rem solid #e9e9e9;
+}
+.wtfmain1{
+    line-height: 0.9rem;
+    color:#616161;
+    font-size: 0.27rem;
+}
+.wtfmain1.active{
+    color:#ff4444;
+    border-bottom: 0.02rem solid #ff4444;
+}
+.wtflist1{
+    padding:0.12rem 0.28rem;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.wtfdeg1{
+    height: 2.35rem;
+    width: 100%;
+    border-bottom: 0.02rem solid #e9e9e9;
+    box-sizing: border-box;
+    position: relative;
+}
+.wtfdeg1 a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.wtfdeg11{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.wtfdeg11>img{
+    height:90%;
+    display: block;
+}
+.wtfright{
+    padding-left:0.3rem;
+    box-sizing: border-box;
+}
+.wtfright h3{
+    margin-top:0.3rem;
+    font-size: 0.23rem;
+    color:#ff3737;
+}
+.wtfright p{
+    font-size: 0.28rem;
+    color:#000000;
+    padding-right:0.1rem;
+    box-sizing: border-box;
+    height:0.8rem;
+    width:4.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.wtfgowu{
+    height:0.63rem;
+    width:0.63rem;
+    position: absolute;
+    right:0.24rem;
+    top:1rem;
+    bottom:0;
+    margin:auto 0;
+}
+.wtfgowu img{
+    height:100%;
+    width: 100%;
+}
+.wtfbgtiao{
+    height:0.3rem;
+    width: 100%;
+    background: #f4f4f4;
+}
+.wtftuijaintitle{
+    height:0.28rem;
+    width: 100%;
+    line-height: 0.28rem;
+    font-size: 0.28rem;
+    padding:0 0.28rem;
+    box-sizing: border-box;
+    display: flex;
+    margin-top:0.3rem;
+}
+.wtffangkuai{
+    height:0.12rem;
+    width: 0.12rem;
+    background: #000000;
+    margin-top:0.06rem;
+    transform: rotateZ(45deg);
+    margin-right:0.12rem;
+}
+.wtftuijian{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding:0.2rem 0.4rem;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+.wtftuijian>img{
+    height:3.4rem;
+    width: 48%;
+    display: block;
+}
+.Wtflargepic{
+    height:13rem;
+    width: 100%;
+    padding:0.1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Wtflargepic img{
+    height:49%;
+    width: 49%;
+    display: block;
+}
+.wtffoot{
+    width:100%;
+    padding:0.6rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.wtffoot h1{
+    font-size: 0.75rem;
+    color:#1677c6;
+    font-weight: bold;
+}
+.wtffoot p{
+    margin-top:0.2rem;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    font-weight: bold;
+}
+.wtfblue{
+    height:1.4rem;
+    width: 100%;
+    background: #2676ff;
+    margin-bottom: 1rem;
+}
+.wtfsuccess, .wtfsucc{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    height:0.8rem;
+    width: 1.9rem;
+    line-height: 0.8rem;
+    color:#ffffff;
+    background: rgba(0,0,0,0.8);
+    padding-left:0.1rem;
+    box-sizing: border-box;
+    z-index: 9999999999999;
+    display: none;
+    border-radius: 0.2rem;
+}
+.wtfsucc{
+    width: 2.2rem;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="x5-orientation" content="portrait | landscape"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <link rel="stylesheet" href="<?php echo CSS_PATH ;?>bootstrap.min.css">
+    <script src="<?php echo JS_PATH ;?>browser.min.js"></script>
+    <script src="<?php echo JS_PATH ;?>react.js"></script>
+    <script src="<?php echo JS_PATH ;?>react-dom.js"></script>
+    <script type="text/babel" src="<?php echo JS_PATH ;?>cal.jsx"></script>
+    <style>
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: 42.6777px;
+            }
+        }
+
+        @media screen and (min-width: 360px) {
+            html {
+                font-size: 48px;
+            }
+        }
+
+        @media screen and (min-width: 375px) {
+            html {
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (min-width: 385px) {
+            html {
+                font-size: 51.33333px;
+            }
+        }
+
+        @media screen and (min-width: 412px) {
+            html {
+                font-size: 54.93333px;
+            }
+        }
+
+        @media screen and (min-width: 414px) {
+            html {
+                font-size: 55.2px;
+            }
+        }
+
+        @media screen and (min-width: 750px) {
+            html {
+                font-size: 100px;
+            }
+        }
+
+        .button {
+            height: 20%;
+            width: 25%;
+            border: 1px solid #1cc7ff;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 1.875rem;
+            font-size: 0.4rem;
+            font-family: "Monotype Corsiva";
+            color: #000000;
+        }
+
+        .col2 {
+            width: 50%;
+        }
+
+        html, body, #root, #cal {
+            width: 100%;
+            height: 100%;
+        }
+
+        #cal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .screen {
+            flex: 1;
+            width: 100%;
+            background: #000000;
+            position: relative;
+        }
+
+        .keyboard {
+            flex: 2;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .num {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            color: #ffffff;
+            font-size: 0.5rem;
+        }
+    </style>
+
+</head>
+<body>
+<div id="root">
+
+</div>
+</body>
+</html>
+<script type="text/babel">
+    class Screen extends React.Component {
+        render() {
+            return (
+                    <div className="screen">
+                        <div className="num">{this.props.num}</div>
+                    </div>
+            )
+        }
+    }
+    class Button extends React.Component {
+        render() {
+            return (
+                    <div className={`${this.props.col ? 'col2' : ''} button`}
+                        onClick={()=>this.props.fn(this.props.children)}
+                    >
+                        {this.props.children}
+                    </div>
+            )
+        }
+    }
+    class KeyBoard extends React.Component {
+        render() {
+            var els = this.props.data.map((v, i) => {
+                var fn;
+                switch (v.type){
+                    case 1:fn=this.props.numberClick;
+                        break;
+                    case 2:fn=this.props.numberClick;
+                        break;
+                    case 3:fn=this.props.equalClick;
+                        break;
+                    default:fn=()=>{};
+
+                }
+                return (
+                        <Button key={i}
+                                col={`${v.type == 3 ? 'col2' : ''}`}
+                                fn={fn}
+                        >
+                            {v.content}
+                        </Button>
+                )
+            })
+            return (
+                    <div className="keyboard">
+                        {els}
+                    </div>
+            )
+        }
+    }
+    const buttons = [
+        {type: 4, content: 'AC'},
+        {type: 2, content: '('},
+        {type: 2, content: ')'},
+        {type: 2, content: '/'},
+        {type: 1, content: 7},
+        {type: 1, content: 8},
+        {type: 1, content: 9},
+        {type: 2, content: '*'},
+        {type: 1, content: 4},
+        {type: 1, content: 5},
+        {type: 1, content: 6},
+        {type: 2, content: '+'},
+        {type: 1, content: 1},
+        {type: 1, content: 2},
+        {type: 1, content: 3},
+        {type: 2, content: '-'},
+        {type: 1, content: 0},
+        {type: 1, content: '.'},
+        {type: 3, content: '='},
+    ];
+    class Cal extends React.Component {
+        constructor() {
+            super();
+            this.state = ({
+                num: '0',
+                expression: ''
+            })
+            this.numberClick = this.numberClick.bind(this);
+            this.equalClick = this.equalClick.bind(this);
+        }
+
+        numberClick(v) {
+            var e = this.state.expression + v
+            this.setState({
+                expression: e,
+                num: e,
+            })
+        }
+        equalClick() {
+            try {
+                var num = eval(this.state.expression);
+                this.setState({
+                    num: num,
+                    expression: '' + num
+                })
+            }
+            catch (e) {
+                var num = '非法表达式';
+                this.setState({
+                    num: num,
+                    expression: ''
+                })
+            }
+        }
+        render() {
+            return (
+                    <div id="cal">
+                        <Screen num={this.state.num}/>
+                        <KeyBoard data={buttons} numberClick={this.numberClick}
+                                  equalClick={this.equalClick}
+                        />
+                    </div>
+            )
+        }
+    }
+    ReactDOM.render(<Cal/>, document.querySelector('#root'));
+</script>

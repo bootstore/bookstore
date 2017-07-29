@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="<?php echo CSS_PATH ;?>bootstrap.min.css">
+    <script src="<?php echo JS_PATH ;?>browser.min.js"></script>
+    <script src="<?php echo JS_PATH ;?>react.js"></script>
+    <script src="<?php echo JS_PATH ;?>react-dom.js"></script>
+</head>
+<body>
+<div id="root">
+
+</div>
+</body>
+</html>
+<script type="text/babel">
+    class Input extends React.Component {
+        render() {
+            return (
+                    <div className="form-grop">
+                        <label >{this.props.scale == 'c' ? '摄氏度' : '华氏度'}</label>
+                        <input type="text"
+                               value={this.props.t}
+                               onChange={(e) => this.props.fn(e.currentTarget.value)}
+                               className="form-control"/>
+                    </div>
+            )
+        }
+    }
+    class Tip extends React.Component {
+        render() {
+            return <h1>水{this.props.boil ? '开' : '不开'}</h1>
+        }
+    }
+    class Cal extends React.Component {
+        constructor() {
+            super();
+            this.state = ({
+                c: '',
+                f: ''
+            })
+            this.cChange = this.cChange.bind(this)
+            this.fChange = this.fChange.bind(this)
+        }
+
+        c2f(c) {
+            return (c * 9 / 5) + 32
+        }
+
+        f2c(f) {
+            return (f - 32) * 5 / 9
+        }
+
+        cChange(c) {
+            if (c == '') {
+                this.setState({
+                    c: '',
+                    f: ''
+                })
+            }
+            else {
+                this.setState({
+                    c: c,
+                    f: parseInt((this.c2f(c) * 100)) / 100
+                })
+            }
+
+        }
+
+        fChange(f) {
+            if (f == '') {
+                this.setState({
+                    c: '',
+                    f: ''
+                })
+            }
+            else {
+                this.setState({
+                    f: f,
+                    c: parseInt((this.f2c(f) * 100)) / 100
+                })
+            }
+        }
+
+        render() {
+            return (
+                    <div className="container">
+                        <Input scale='c' fn={this.cChange} t={this.state.c}/>
+                        <hr/>
+                        <Input scale='f' fn={this.fChange} t={this.state.f}/>
+                        <Tip boil={this.state.c >= 100}/>
+                    </div>
+            )
+        }
+
+    }
+    ReactDOM.render(<Cal/>, document.querySelector('#root'))
+
+
+    //    class Input1 extends React.Component{
+    //        render(){
+    //            return (
+    //                    <input id="inp1" value={this.props.children}
+    //                           onChange={()=>this.props.change1(document.querySelector('#inp1').value)}  type="text"/>
+    //            )
+    //        }
+    //    }
+    //    class Input2 extends React.Component{
+    //        render(){
+    //            return (
+    //                    <input id="inp2"  value={this.props.children}
+    //                           onChange={()=>this.props.change1(document.querySelector('#inp2').value)} type="text"/>
+    //            )
+    //        }
+    //    }
+    //    class Tip extends React.Component{
+    //        render(){
+    //            return <h1>水{this.props.boil?'开':'不开'}</h1>
+    //        }
+    //    }
+    //    class Page extends React.Component{
+    //        constructor(){
+    //            super();
+    //            this.state=({
+    //                input1:'',
+    //                input2:''
+    //            })
+    //            this.inp1=this.inp1.bind(this);
+    //            this.inp2=this.inp2.bind(this);
+    //        }
+    //        inp1(in1){
+    //            if(in1==''){
+    //                this.setState({
+    //                    input1:'',
+    //                    input2:''
+    //                })
+    //            }else{
+    //                this.setState({
+    //                    input1:in1,
+    //                    input2:(in1 - 32) * 5 / 9
+    //                })
+    //            }
+    //        }
+    //        inp2(in2){
+    //            if(in2==''){
+    //                this.setState({
+    //                    input1:'',
+    //                    input2:''
+    //                })
+    //            }else{
+    //                this.setState({
+    //                    input1:(in2 * 9 / 5) + 32,
+    //                    input2:in2
+    //                })
+    //            }
+    //        }
+    //        render(){
+    //            return(
+    //                    <div className="container">
+    //                        <div className="panel panel-default">
+    //                            <div className="panel-heading">Enter temperatrue in Celsius</div>
+    //                            <div className="panel-body">
+    //                                <Input2 change1={this.inp2}>
+    //                                    {this.state.input2}
+    //                                </Input2>
+    //                            </div>
+    //                        </div>
+    //                        <div className="panel panel-default">
+    //                            <div className="panel-heading">Enter temperatrue in Fahrenheit</div>
+    //                            <div className="panel-body">
+    //                                <Input1 change1={this.inp1}>
+    //                                    {this.state.input1}
+    //                                </Input1>
+    //                            </div>
+    //                        </div>
+    //                        <Tip boil={this.state.input1>=100}/>
+    //                    </div>
+    //            )
+    //        }
+    //    }
+    //    ReactDOM.render(<Page/>,document.querySelector('#root'))
+</script>
