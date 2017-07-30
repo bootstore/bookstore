@@ -411,7 +411,7 @@ class GoodsDetails extends React.Component {
                 <Banner banner={this.state.data.banner}/>
                 <Con data={this.state.data}
                      activity={this.onActivity} cart={this.onCart}/>
-                <Details con={this.state.content}/>
+                <Details con={this.state.data}/>
                 <Footer addCart={this.addCart} pay={this.onCart}/>
                 <Store mask={this.state.mask}
                        store={this.state.store}

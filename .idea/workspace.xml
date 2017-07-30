@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5964f62d-b8d7-46b0-891b-a66333bca489" name="默认的" comment="" />
+    <list default="true" id="5964f62d-b8d7-46b0-891b-a66333bca489" name="默认的" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/comment/footer.js" afterPath="$PROJECT_DIR$/src/components/comment/footer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js" afterPath="$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/payorder/payorder.js" afterPath="$PROJECT_DIR$/src/components/payorder/payorder.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +20,10 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="178">
+              <caret line="175" column="40" lean-forward="false" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="40" />
               <folding>
+                <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
                 <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
                 <element signature="n#!!block;n#wtfhandelnav1#0;n#App#0" expanded="false" />
@@ -33,10 +39,38 @@
       <file leaf-file-name="zjt_pay.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="152">
+              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goodsDetails.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13">
+              <caret line="226" column="0" lean-forward="true" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="n#Store#0" expanded="false" />
+                <element signature="n#Header#0" expanded="false" />
+                <element signature="n#Banner#0" expanded="false" />
+                <element signature="n#Con#0" expanded="false" />
+                <element signature="n#Details#0" expanded="false" />
+                <element signature="n#Footer#0" expanded="false" />
+                <element signature="n#!!block;n#constructor#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#componentDidMount#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#onActivity#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#onCart#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#addCart#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#closes#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#closecart#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#open#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#class#0;n#GoodsDetails#0" expanded="false" />
+                <element signature="n#!!block;n#numbers#0;n#GoodsDetails#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -56,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/comment/footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="114">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -71,8 +105,8 @@
       <file leaf-file-name="payorder.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/payorder/payorder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            <state relative-caret-position="170">
+              <caret line="72" column="47" lean-forward="true" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#PayList#0" expanded="false" />
@@ -203,9 +237,7 @@
         <option value="$PROJECT_DIR$/src/components/lyx_my/lyx_my.js" />
         <option value="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js" />
         <option value="$PROJECT_DIR$/src/components/dizhi/dizhi.js" />
-        <option value="$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js" />
         <option value="$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.css" />
-        <option value="$PROJECT_DIR$/src/components/payorder/payorder.js" />
         <option value="$PROJECT_DIR$/src/components/dizhi/liandong.js" />
         <option value="$PROJECT_DIR$/src/components/comment/footer.css" />
         <option value="$PROJECT_DIR$/src/components/comment/header.js" />
@@ -213,11 +245,13 @@
         <option value="$PROJECT_DIR$/src/components/shoppingCart/shoppingCart.js" />
         <option value="$PROJECT_DIR$/src/components/comment/header.js" />
         <option value="$PROJECT_DIR$/src/components/comment/footer.js" />
-        <option value="$PROJECT_DIR$/src/components/comment/footer.js" />
         <option value="$PROJECT_DIR$/database.sql" />
         <option value="D:/wamp/wamp64/www/jiluphp/app/wtfhome.php" />
         <option value="$PROJECT_DIR$/src/components/wtflogin/wtflogin.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/comment/footer.js" />
+        <option value="$PROJECT_DIR$/src/components/payorder/payorder.js" />
+        <option value="$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js" />
       </list>
     </option>
   </component>
@@ -232,8 +266,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="76" />
-    <option name="y" value="8" />
+    <option name="x" value="141" />
+    <option name="y" value="6" />
     <option name="width" value="1309" />
     <option name="height" value="747" />
   </component>
@@ -316,7 +350,29 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="comment">
+            <PATH_ELEMENT USER_OBJECT="zjt_pay">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="bookstore">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="components">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="goodsDetails">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -527,15 +583,16 @@
       <workItem from="1501207664981" duration="22136000" />
       <workItem from="1501290245500" duration="20200000" />
       <workItem from="1501399404721" duration="3270000" />
-      <workItem from="1501406829143" duration="2457000" />
+      <workItem from="1501406829143" duration="4812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98136000" />
+    <option name="totallyTimeSpent" value="100491000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="76" y="8" width="1309" height="747" extended-state="0" />
+    <frame x="141" y="6" width="1309" height="747" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22497998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -544,7 +601,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.62703586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32247558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -782,29 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#65#0" expanded="false" />
-            <element signature="n#Store#0" expanded="false" />
-            <element signature="n#Header#0" expanded="false" />
-            <element signature="n#Banner#0" expanded="false" />
-            <element signature="n#Con#0" expanded="false" />
-            <element signature="n#Details#0" expanded="false" />
-            <element signature="n#GoodsDetails#0" expanded="false" />
-            <marker date="1501295179820" expanded="false" signature="6272:6407" ph="{...}" />
-            <marker date="1501295179820" expanded="true" signature="6287:6407" ph="{...}" />
-            <marker date="1501295179820" expanded="true" signature="6318:6407" ph="&lt;div/&gt;" />
-            <marker date="1501295179820" expanded="true" signature="13282:13507" ph="&lt;Store/&gt;" />
-            <marker date="1501295179820" expanded="true" signature="13282:13702" ph="&lt;div/&gt;" />
-            <marker date="1501295179820" expanded="true" signature="13282:13718" ph="{...}" />
-            <marker date="1501295179820" expanded="true" signature="13524:13683" ph="&lt;div/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/comment/header.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -817,17 +851,6 @@
         <state relative-caret-position="19">
           <caret line="113" column="56" lean-forward="false" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/payorder/payorder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#PayList#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,32 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#wtfhandelnav1#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#wtfhandelnav2#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#wtfhandelnav3#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#wtfhandelnav4#0;n#App#0" expanded="false" />
-            <element signature="e#4523#5434#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/wtflogin/wtflogin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -963,10 +960,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/comment/footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="175" column="40" lean-forward="false" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
+            <element signature="n#!!block;n#wtfhandelnav1#0;n#App#0" expanded="false" />
+            <element signature="n#!!block;n#wtfhandelnav2#0;n#App#0" expanded="false" />
+            <element signature="n#!!block;n#wtfhandelnav3#0;n#App#0" expanded="false" />
+            <element signature="n#!!block;n#wtfhandelnav4#0;n#App#0" expanded="false" />
+            <element signature="e#4523#5434#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/payorder/payorder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="72" column="47" lean-forward="true" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#PayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="226" column="0" lean-forward="true" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#Store#0" expanded="false" />
+            <element signature="n#Header#0" expanded="false" />
+            <element signature="n#Banner#0" expanded="false" />
+            <element signature="n#Con#0" expanded="false" />
+            <element signature="n#Details#0" expanded="false" />
+            <element signature="n#Footer#0" expanded="false" />
+            <element signature="n#!!block;n#constructor#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#onActivity#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#onCart#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#addCart#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#closes#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#closecart#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#open#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#class#0;n#GoodsDetails#0" expanded="false" />
+            <element signature="n#!!block;n#numbers#0;n#GoodsDetails#0" expanded="false" />
           </folding>
         </state>
       </provider>

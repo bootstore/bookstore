@@ -19,7 +19,6 @@ class Footter extends React.Component {
 
     componentDidMount() {
 
-
         //   判断hash
         if (window.location.pathname) {
             switch (window.location.pathname) {

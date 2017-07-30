@@ -91,9 +91,9 @@ class PayOrder extends React.Component {
                         <p className="price"><span className="rmb">￥</span>888.00</p>
                     </div>
                     <div>
-                        <a href="#" onClick={this.onClick} ref={(el)=>this.el=el}>
+                        <Link to="/zjtpay" onClick={this.onClick} ref={(el)=>this.el=el}>
                             提交订单
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
