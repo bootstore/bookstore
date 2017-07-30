@@ -1,0 +1,147 @@
+.wtfhome{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.lyx_zhe{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.2);
+    margin: auto;
+    overflow: hidden;
+    z-index: 1000;
+}
+.lyx_add{
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.lyx_add .lyx_box{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.lyx_zhe{
+    display: none;
+}
+.lyx_box .lyx_pic{
+    width: 1.72rem;
+    height: 1.72rem;
+    border: 1px solid #9a9a9a;
+    position: absolute;
+    top:-0.5rem;
+    left: 0.25rem;
+    border-radius: 0.1rem;
+}
+.lyx_box .lyx_pic img{
+    width: 1.7rem;
+    border-radius: 0.1rem;
+}
+.lyx_box .lyx_shu{
+    width: 4.5rem;
+    height: auto;
+    margin-top: 0.25rem;
+}
+.lyx_box .lyx_shu p{
+    width: 100%;
+    margin-bottom: 0.15rem;
+    font-size: 0.28rem;
+    overflow: hidden;
+    margin-left: 2.2rem;
+    height: 0.4rem;
+}
+.lyx_box .lyx_shu p:last-child{
+    color: red;
+    font-size: 0.3rem;
+}
+.lyx_box .lyx_guan{
+    width: 0.6rem;
+    position: absolute;
+    top: -0.1rem;
+    right: 0.1rem;
+}
+
+
+
+.lyx_box .lyx_num{
+    width:92%;
+    height:1.3rem;
+    border-top:1px solid #e5e5e5;
+    margin: auto;
+    margin-top: 0.6rem;
+}
+.lyx_box .lyx_num .lyx_left{
+    float: left;
+}
+.lyx_box .lyx_left p:first-child{
+    font-size: 0.3rem;
+    margin-top: 0.2rem;
+}
+.lyx_box .lyx_left p:last-child{
+    font-size: 0.26rem;
+    color: #9f9f9f;
+}
+.lyx_num .lyx_right{
+    float: right;
+}
+.lyx_num .lyx_right ul{
+    width: 2.7rem;
+    height: 0.7rem;
+    margin-top: 0.25rem;
+}
+.lyx_num .lyx_right ul li{
+    width: 33.333333333%;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.7rem;
+    float: left;
+}
+.lyx_num .lyx_right ul li:nth-child(2){
+    border: 1px solid #a7a7a7;
+}
+.lyx_num .lyx_right ul li:nth-child(3){
+    border-top: 1px solid #a7a7a7;
+    border-right: 1px solid #a7a7a7;
+    border-bottom: 1px solid #a7a7a7;
+}
+.lyx_num .lyx_right ul li:nth-child(1){
+    border-top: 1px solid #d9d8d8;
+    border-left: 1px solid #d9d8d8;
+    border-bottom: 1px solid #d9d8d8;
+    background: #f8f8f8;
+    color: #cccbcb;
+}
+
+.lyx_an{
+    width: 100%;
+    height: 1rem;
+}
+.lyx_an li{
+    width: 50%;
+    height: 100%;
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #ffffff;
+    float: left;
+}
+.lyx_an li.lyx_one{
+    background: #ff8853;
+}
+.lyx_an li.lyx_two{
+    background: #fe4543;
+}
+
+
+
+
+
+

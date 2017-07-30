@@ -31,12 +31,14 @@ class App extends React.Component {
             wtfbook1:'',
             wtfbook2:'',
             wtfbook3:'',
-            wtfbook4:''
+            wtfbook4:'',
+            lyxgo:''
         }
         this.wtfhandelnav1=this.wtfhandelnav1.bind(this);
         this.wtfhandelnav2=this.wtfhandelnav2.bind(this);
         this.wtfhandelnav3=this.wtfhandelnav3.bind(this);
         this.wtfhandelnav4=this.wtfhandelnav4.bind(this);
+        this.lyxgogo=this.lyxgogo.bind(this)
     }
     componentDidMount(){
         fetch('/jiluphp/index.php/wtfhome/wtfnav?cid=1')
@@ -96,6 +98,11 @@ class App extends React.Component {
                 })
             })
 
+    }
+     lyxgogo(c){
+        this.setState({
+            lyxgo:c
+        })
     }
     wtfhandelnav1(id,aa){
         this.setState({
@@ -167,6 +174,8 @@ class App extends React.Component {
                         wtfbook2={this.state.wtfbook2}
                         wtfbook3={this.state.wtfbook3}
                         wtfbook4={this.state.wtfbook4}
+                        lyxgogo={this.lyxgogo}
+                        lyxgo={this.state.lyxgo}
                     />
                     }/>
                     <Route path="/shoppingCart" component={shoppingCart}/>

@@ -9,6 +9,7 @@ import {
     Link
 } from 'react-router-dom'
 import "./wtfhome.css";
+import "./lyxadd.css";
 import Footer from '../comment/footer';
 import Header from '../comment/header';
 
@@ -50,11 +51,67 @@ class Lunbo extends React.Component {
         )
     }
 }
-class Lib extends Component {
-    constructor() {
-        super();
-    }
+class L_add extends Component{
+    render() {
+        return (
+            <div className="lyx_zhe" >
+                {/*<div className="">加入购物车成功</div>*/}
+                <div className="lyx_add">
+                    <div className="lyx_box">
+                        <div className="lyx_title">
+                            <div className="lyx_pic">
+                                <img src={this.props.lyxgo!=''?this.props.lyxgo.img:''} alt=""/>
 
+                            </div>
+                            <div className="lyx_shu">
+                                <p>{this.props.lyxgo!=''?this.props.lyxgo.title:''}</p>
+                                <p>￥ {this.props.lyxgo!=''?this.props.lyxgo.price:''}</p>
+                            </div>
+                            <img src="../../img/lyx_guan.png" alt="" className="lyx_guan"
+                                 onClick={(e)=>{
+                                     let body=document.querySelector('body')
+                                     body.style.overflow='visible';
+                                     let asd=document.querySelector('.lyx_zhe')
+                                     asd.style.display='none'}
+                                 }
+                            />
+                        </div>
+
+                        <div className="lyx_num">
+                            <div className="lyx_left">
+                                <p>购买数量:</p>
+                                <p>剩余件数</p>
+                            </div>
+                            <div className="lyx_right">
+                                <ul>
+                                    <li>-</li>
+                                    <li className="lyx_addadd">1</li>
+                                    <li className="lyx_addnum" onClick={(e)=>{
+
+                                    }}>+</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul className="lyx_an">
+                        <li className="lyx_one" onClick={(e)=>{
+                            let body=document.querySelector('body')
+                            body.style.overflow='visible';
+                            let asd=document.querySelector('.lyx_zhe')
+                            asd.style.display='none'
+
+                            let lyxsuc=document.querySelector('.wtfsuccess')
+                            lyxsuc.style.display='block'
+                            setTimeout(()=>lyxsuc.style.display='none',1000)
+                        }}>加入购物车</li>
+                        <li className="lyx_two">立即购买</li>
+                    </ul>
+                </div>
+            </div>
+        )
+    }
+}
+class Lib extends Component {
     getnum(v) {
         if (!localStorage.wtfbk) {
             let a = [];
@@ -77,8 +134,8 @@ class Lib extends Component {
                 document.querySelector('.wtfsuccess').style.display='block';
                 setTimeout(()=>document.querySelector('.wtfsuccess').style.display='none',1000)
             } else {
-                document.querySelector('.wtfsucc').style.display='block';
-                setTimeout(()=>document.querySelector('.wtfsucc').style.display='none',1000)
+                // document.querySelector('.wtfsucc').style.display='block';
+                // setTimeout(()=>document.querySelector('.wtfsucc').style.display='none',1000)
                 // let b = JSON.parse(localStorage.wtfbk);
                 // let c = b.map((vv, i) => {
                 //     if (vv.id == v.id) {
@@ -94,6 +151,7 @@ class Lib extends Component {
     render() {
         return (
             <div>
+
                 <ul className="wtfnav1">
                     {
                         this.props.nav1 ? this.props.nav1.map((v, i) =>
@@ -107,7 +165,7 @@ class Lib extends Component {
                     {
                         this.props.wtfbook1 ? this.props.wtfbook1.map((v, i) =>
                             <li key={v.id} className="wtfdeg1">
-                                <Link to={`detail/${v.id}`}>
+                                <Link to={`/detail/${v.id}`}>
                                     <div className="wtfdeg11">
                                         <img src={v.img} alt=""/>
                                         <div className="wtfright">
@@ -123,6 +181,13 @@ class Lib extends Component {
                                                          e.preventDefault();
                                                          e.target.src="../../img/wtfgoushop1.png"
                                                          this.getnum(v,this)
+
+
+                                                         let body=document.querySelector('body')
+                                                         body.style.overflow='hidden';
+                                                         let asd=document.querySelector('.lyx_zhe')
+                                                         asd.style.display='block'
+                                                         this.props.lyxgogo(v)
                                                      }}
                                                 />
                                             </div>
@@ -135,7 +200,7 @@ class Lib extends Component {
                     {
                         this.props.wtfbook2 ? this.props.wtfbook2.map((v, i) =>
                             <li key={v.id} className="wtfdeg1">
-                                <Link to={`detail/${v.id}`}>
+                                <Link to={`gj/${v.id}`}>
                                     <div className="wtfdeg11">
                                         <img src={v.img} alt=""/>
                                         <div className="wtfright">
@@ -151,6 +216,12 @@ class Lib extends Component {
                                                          e.preventDefault();
                                                          e.target.src="../../img/wtfgoushop1.png"
                                                          this.getnum(v,this)
+
+                                                         let body=document.querySelector('body')
+                                                         body.style.overflow='hidden';
+                                                         let asd=document.querySelector('.lyx_zhe')
+                                                         asd.style.display='block'
+                                                         this.props.lyxgogo(v)
                                                      }}
                                                 />
                                             </div>
@@ -163,7 +234,7 @@ class Lib extends Component {
                     {
                         this.props.wtfbook3 ? this.props.wtfbook3.map((v, i) =>
                             <li key={v.id} className="wtfdeg1">
-                                <Link to={`detail/${v.id}`}>
+                                <Link to={`gj/${v.id}`}>
                                     <div className="wtfdeg11">
                                         <img src={v.img} alt=""/>
                                         <div className="wtfright">
@@ -179,6 +250,12 @@ class Lib extends Component {
                                                          e.preventDefault();
                                                          e.target.src="../../img/wtfgoushop1.png"
                                                          this.getnum(v,this)
+
+                                                         let body=document.querySelector('body')
+                                                         body.style.overflow='hidden';
+                                                         let asd=document.querySelector('.lyx_zhe')
+                                                         asd.style.display='block'
+                                                         this.props.lyxgogo(v)
                                                      }}
                                                 />
                                             </div>
@@ -191,7 +268,7 @@ class Lib extends Component {
                     {
                         this.props.wtfbook4 ? this.props.wtfbook4.map((v, i) =>
                             <li key={v.id} className="wtfdeg1">
-                                <Link to={`detail/${v.id}`}>
+                                <Link to={`gj/${v.id}`}>
                                     <div className="wtfdeg11">
                                         <img src={v.img} alt=""/>
                                         <div className="wtfright">
@@ -207,6 +284,12 @@ class Lib extends Component {
                                                          e.preventDefault();
                                                          e.target.src="../../img/wtfgoushop1.png"
                                                          this.getnum(v,this)
+
+                                                         let body=document.querySelector('body')
+                                                         body.style.overflow='hidden';
+                                                         let asd=document.querySelector('.lyx_zhe')
+                                                         asd.style.display='block'
+                                                         this.props.lyxgogo(v)
                                                      }}
                                                 />
                                             </div>
@@ -269,39 +352,41 @@ class Wtffoot extends Component {
 class WtfHome extends Component {
 
     render() {
+        // console.log(this.props.lyxgo)
         let title1 = '基路书店';
         return (
             <div className="wtfhome">
+                <L_add lyxgo={this.props.lyxgo} lyxnum={this.props.lyxnum}/>
                 <Header title={title1}/>
                 <Lunbo />
                 <div className="wtfsuccess">
                     加入购物车成功
                 </div>
                 <div className="wtfsucc">
-                    请在购物车中查看
+                    {/*请在购物车中查看*/}
                 </div>
                 <div className="wtfbig1">
                     <img src="../../img/wtfmainbig.png" alt=""/>
                 </div>
                 <div className="wtfbgtiao"></div>
-                <Lib wtfbook1={this.props.wtfbook1} nav1={this.props.nav1} navac1={this.props.navac1}
+                <Lib lyxgo={this.props.lyxgo} lyxgogo={this.props.lyxgogo} wtfbook1={this.props.wtfbook1} nav1={this.props.nav1} navac1={this.props.navac1}
                      wtfhandelnav1={this.props.wtfhandelnav1}/>
                 <div className="wtfbgtiao"></div>
                 <div className="wtfbig1">
                     <img src="../../img/wtfmainbig2.png" alt=""/>
                 </div>
                 <div className="wtfbgtiao"></div>
-                <Lib wtfbook2={this.props.wtfbook2} nav1={this.props.nav2} navac1={this.props.navac2}
+                <Lib  lyxgo={this.props.lyxgo} lyxgogo={this.props.lyxgogo}  wtfbook2={this.props.wtfbook2} nav1={this.props.nav2} navac1={this.props.navac2}
                      wtfhandelnav1={this.props.wtfhandelnav2}/>
                 <div className="wtfbgtiao"></div>
                 <Wtftuijian/>
                 <div className="wtfbgtiao"></div>
-                <Lib wtfbook3={this.props.wtfbook3} nav1={this.props.nav3} navac1={this.props.navac3}
+                <Lib  lyxgo={this.props.lyxgo} lyxgogo={this.props.lyxgogo}  wtfbook3={this.props.wtfbook3} nav1={this.props.nav3} navac1={this.props.navac3}
                      wtfhandelnav1={this.props.wtfhandelnav3}/>
                 <div className="wtfbgtiao"></div>
                 <Wtflargepic/>
                 <div className="wtfbgtiao"></div>
-                <Lib wtfbook4={this.props.wtfbook4} nav1={this.props.nav4} navac1={this.props.navac4}
+                <Lib  lyxgo={this.props.lyxgo} lyxgogo={this.props.lyxgogo}  wtfbook4={this.props.wtfbook4} nav1={this.props.nav4} navac1={this.props.navac4}
                      wtfhandelnav1={this.props.wtfhandelnav4}/>
                 <div className="wtfbgtiao"></div>
                 <Wtffoot/>
