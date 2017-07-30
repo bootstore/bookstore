@@ -280,8 +280,7 @@ const data=[
     {id:3,name:'待发货'},
     {id:4,name:'待收货'},
     {id:5,name:'已完成'}
-]
-
+];
 
 class Zjt_OrderList extends Component {
     constructor(){
