@@ -1,0 +1,16 @@
+
+
+文件：    
+jiluphp放在www目录下
+database.sql导入数据库
+
+
+登录网址:	/wtflogin
+首页：		/
+
+
+登录账号：  admin
+密码：      123456
+
+
+

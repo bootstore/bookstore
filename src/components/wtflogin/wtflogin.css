@@ -1,0 +1,43 @@
+
+.wtflogin{
+    height:13.34rem;
+    width: 7.5rem;
+    overflow: hidden;
+}
+.wtflogo{
+    position: absolute;
+    top:2rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+.wtfbt{
+    width: 3rem;
+    text-align: center;
+    position: absolute;
+    top:3.2rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+.wtflog{
+    height:6rem;
+    width: 65%;
+    position: absolute;
+    top:4rem;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.login-form-button{
+    margin-top:0.5rem;
+    width: 100%;
+}
+.login-form-forgot{
+    position: absolute;
+    right:0;
+    top:0;
+}

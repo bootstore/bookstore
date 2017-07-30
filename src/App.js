@@ -4,8 +4,7 @@ import WtfHome from './components/wtfhome/wtfhome'
 import Admin from './components/admin/admin';
 import {
     BrowserRouter as Router,
-    Route,
-    // Link
+    Route
 } from 'react-router-dom'
 import shoppingCart from './components/shoppingCart/shoppingCart';
 import My from "./components/lyx_my/lyx_my";
@@ -13,6 +12,9 @@ import PayOrder from "./components/payorder/payorder";
 import Zjt_OrderList from "./components/zjt_orderlist/zjt_orderlist";
 import Dizhi from "./components/dizhi/dizhi";
 import GoodsDetails from "./components/goodsDetails/goodsDetails";
+import Wtflogin from './components/wtflogin/wtflogin';
+import WtfRegister from './components/wtflogin/WtfRegister';
+import Zjt_pay from './components/zjt_pay/zjt_pay';
 
 class App extends React.Component {
     constructor(){
@@ -171,6 +173,9 @@ class App extends React.Component {
                     <Route path="/my" component={My}/>
                     <Route path="/payorder" component={PayOrder}/>
                     <Route path="/orderList" component={Zjt_OrderList}/>
+                    <Route path="/zjtpay" component={Zjt_pay}/>
+                    <Route exact path="/wtflogin" render={()=><Wtflogin/>}/>
+                    <Route exact path="/WtfRegister" render={()=><WtfRegister/>}/>
                     {/*<Route path="/address" component={Dizhi}/>*/}
                     <Route path="/detail/:id" component={GoodsDetails}/>
                 </div>

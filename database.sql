@@ -141,4 +141,13 @@ INSERT INTO user (name, password, pic) VALUES
 ('亲爱的一组宝宝','123456','')
 
 
+-- 登录注册数据库
+DROP TABLE IF EXISTS wtfuser;
+CREATE TABLE wtfuser(
+  id INT(12) PRIMARY KEY AUTO_INCREMENT,
+  user VARCHAR (255),
+  password VARCHAR (255)
+)DEFAULT CHARSET = utf8;
+INSERT INTO wtfuser (user,password) VALUES
+('admin','e10adc3949ba59abbe56e057f20f883e');
 
