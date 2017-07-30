@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './zjt_pay.css'
+import './zjt_pay.css';
 
 class Zjt_pay extends Component {
     render() {
@@ -8,7 +8,7 @@ class Zjt_pay extends Component {
                 <div className="zjt_wrap">
                     <div className="zjt_box">
                         <div className="zjt_payson">
-                            <img src="/img/zjt_back.png" alt="" className="zjt_payimg"/>
+                            <a href="javascript:history.back()"><img src="/img/zjt_back.png" alt="" className="zjt_payimg"/></a>
                             <img src="/img/zjt1_03.png" alt="" className="zjt_paypic"/>
                             <p className="zjt_payp">请输入支付密码</p>
                         </div>

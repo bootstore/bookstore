@@ -176,7 +176,7 @@ class App extends React.Component {
                     <Route path="/zjtpay" component={Zjt_pay}/>
                     <Route exact path="/wtflogin" render={()=><Wtflogin/>}/>
                     <Route exact path="/WtfRegister" render={()=><WtfRegister/>}/>
-                    {/*<Route path="/address" component={Dizhi}/>*/}
+                    <Route path="/address" component={Dizhi}/>
                     <Route path="/detail/:id" component={GoodsDetails}/>
                 </div>
             </Router>
