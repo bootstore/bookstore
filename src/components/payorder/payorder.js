@@ -3,33 +3,34 @@ import {
     Link
 } from 'react-router-dom';
 import './payorder.css';
-import back from './back.jpg'
-import closed from './closed.jpg';
-import more from './more.jpg';
-import add from './add.jpg';
-import right from './right.jpg';
+
 import gift from './gift.jpg';
 import Header from '../comment/header';
 
-class PayList extends React.Component{
-    render(){
-        return(
-            <div className="content">
+class PayList extends React.Component {
+    render() {
+        console.log(this.props.data)
+        return (
+            <div className="d-content">
                 <ul className="con">
                     <li>
                         <div></div>
                         <div>
-                            <ul>
-                                <li>
-                                    <h1>时尚拉丝十字架戒指对戒男女款</h1>
-                                    <h2>￥888.00</h2>
-                                </li>
-                                <li>
-                                    <p>女款10#</p>
-                                    <p>x1</p>
-                                </li>
+                            {
+                                this.props.data.map(v=>(
+                                    <ul key={1}>
+                                        <li>
+                                            <h1>{v.name}</h1>
+                                            <h2>￥{v.price}</h2>
+                                        </li>
+                                        <li>
+                                            {/*<p>女款10#</p>*/}
+                                            <p>x{v.number}</p>
+                                        </li>
 
-                            </ul>
+                                    </ul>
+                                ))
+                            }
                         </div>
                     </li>
                 </ul>
@@ -41,15 +42,28 @@ class PayList extends React.Component{
 
 
 class PayOrder extends React.Component {
-    constructor(){
+    constructor() {
         super();
-        this.onClick=this.onClick.bind(this)
+        this.state = {
+            arr: []
+        }
+        this.onClick = this.onClick.bind(this)
     }
-    onClick(){
-        this.el.innerHTML='去支付'
+
+    componentDidMount() {
+        if (localStorage.gj) {
+            this.setState({
+                arr: JSON.parse(localStorage.gj)
+            })
+        }
+    }
+
+    onClick() {
+        this.el.innerHTML = '去支付'
     }
 
     render() {
+
         let title1 = '待付款的订单';
         return (
             <div>
@@ -75,7 +89,7 @@ class PayOrder extends React.Component {
                     <img src={gift} alt=""/>
                     <p>基路书店</p>
                 </div>
-                <PayList/>
+                <PayList data={this.state.arr}/>
                 <div className="peisong">
                     <div>配送方式</div>
                     <div>免邮费</div>
@@ -90,10 +104,10 @@ class PayOrder extends React.Component {
                         <span className="heji">合计 : </span>
                         <p className="price"><span className="rmb">￥</span>888.00</p>
                     </div>
-                    <div>
-                        <Link to="/zjtpay" onClick={this.onClick} ref={(el)=>this.el=el}>
+                    <div onClick={this.onClick} ref={(el)=>this.el=el}>
+                        <a href="/zjtpay" onClick={this.onClick} ref={(el) => this.el = el}>
                             提交订单
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

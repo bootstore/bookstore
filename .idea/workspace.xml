@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5964f62d-b8d7-46b0-891b-a66333bca489" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/lyx_my/lyx_my.css" afterPath="$PROJECT_DIR$/src/components/lyx_my/lyx_my.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/lyx_my/lyx_my.js" afterPath="$PROJECT_DIR$/src/components/lyx_my/lyx_my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/payorder/payorder.css" afterPath="$PROJECT_DIR$/src/components/payorder/payorder.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/payorder/payorder.js" afterPath="$PROJECT_DIR$/src/components/payorder/payorder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/wtfhome/lyxadd.css" afterPath="$PROJECT_DIR$/src/components/wtfhome/lyxadd.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/wtfhome/wtfhome.css" afterPath="$PROJECT_DIR$/src/components/wtfhome/wtfhome.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/wtfhome/wtfhome.js" afterPath="$PROJECT_DIR$/src/components/wtfhome/wtfhome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js" afterPath="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.css" afterPath="$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js" afterPath="$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/说明.txt" afterPath="$PROJECT_DIR$/说明.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,10 +28,9 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="172" column="35" lean-forward="false" selection-start-line="172" selection-start-column="35" selection-end-line="172" selection-end-column="35" />
+            <state relative-caret-position="266">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
                 <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
                 <element signature="n#!!block;n#lyxgogo#0;n#App#0" expanded="false" />
@@ -35,9 +42,10 @@
       <file leaf-file-name="dizhi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/dizhi/dizhi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="39" />
+            <state relative-caret-position="209">
+              <caret line="849" column="30" lean-forward="true" selection-start-line="849" selection-start-column="30" selection-end-line="849" selection-end-column="30" />
               <folding>
+                <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#!!block;n#componentDidMount#0;n#Dizhi#0" expanded="false" />
                 <element signature="e#3678#3849#0" expanded="false" />
                 <element signature="e#3895#4311#0" expanded="false" />
@@ -48,23 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zjt_pay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zjt_orderlist.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="zjt_orderlist.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="281" column="21" lean-forward="true" selection-start-line="281" selection-start-column="21" selection-end-line="281" selection-end-column="21" />
+            <state relative-caret-position="209">
+              <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#181#509#0" expanded="false" />
@@ -78,16 +74,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wtfhome.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/wtfhome/wtfhome.js">
+      <file leaf-file-name="payorder.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/payorder/payorder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="360" column="25" lean-forward="true" selection-start-line="360" selection-start-column="25" selection-end-line="360" selection-end-column="25" />
+            <state relative-caret-position="342">
+              <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#40#79#0" expanded="true" />
-                <element signature="e#324#991#0" expanded="false" />
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="n#PayList#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-209">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,6 +135,7 @@
       <find>link</find>
       <find>lyx_guan.png</find>
       <find>成功</find>
+      <find>加入</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -147,7 +153,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/news.sql" />
-        <option value="$PROJECT_DIR$/src/components/wtfhome/wtfhome.css" />
         <option value="$PROJECT_DIR$/src/components/shoppingCart/shoppingCart.css" />
         <option value="$PROJECT_DIR$/src/components/payorder/payorder.css" />
         <option value="$PROJECT_DIR$/src/components/shoppingCart/shoppingCart.js" />
@@ -167,13 +172,14 @@
         <option value="D:/wamp/wamp64/www/jiluphp/app/wtfhome.php" />
         <option value="$PROJECT_DIR$/src/components/wtflogin/wtflogin.js" />
         <option value="$PROJECT_DIR$/src/components/comment/footer.js" />
-        <option value="$PROJECT_DIR$/src/components/payorder/payorder.js" />
         <option value="$PROJECT_DIR$/src/components/goodsDetails/goodsDetails.js" />
-        <option value="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/dizhi/dizhi.js" />
         <option value="$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js" />
         <option value="$PROJECT_DIR$/src/components/wtfhome/wtfhome.js" />
+        <option value="$PROJECT_DIR$/src/components/wtfhome/wtfhome.css" />
+        <option value="$PROJECT_DIR$/src/components/payorder/payorder.js" />
+        <option value="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js" />
       </list>
     </option>
   </component>
@@ -188,9 +194,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="width" value="1309" />
-    <option name="height" value="747" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -293,7 +300,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="comment">
+            <PATH_ELEMENT USER_OBJECT="zjt_orderlist">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -504,28 +511,29 @@
       <workItem from="1501207664981" duration="22136000" />
       <workItem from="1501290245500" duration="20200000" />
       <workItem from="1501399404721" duration="3270000" />
-      <workItem from="1501406829143" duration="11742000" />
+      <workItem from="1501406829143" duration="12587000" />
+      <workItem from="1501462532916" duration="822000" />
+      <workItem from="1501490803042" duration="5405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107421000" />
+    <option name="totallyTimeSpent" value="114493000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="0" width="1309" height="747" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22497998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37785017" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17512275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -534,6 +542,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -612,7 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,9 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,13 +653,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news.sql" />
-    <entry file="file://$PROJECT_DIR$/src/components/wtfhome/wtfhome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-77">
-          <caret line="228" column="24" lean-forward="true" selection-start-line="228" selection-start-column="24" selection-end-line="228" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/payorder/payorder.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -737,10 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="62" column="42" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#50#89#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="113" column="56" lean-forward="false" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,23 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="141" column="0" lean-forward="true" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/shoppingCart/shoppingCart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="79" column="27" lean-forward="false" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-            <element signature="n#ShopBox#0" expanded="false" />
-            <element signature="n#Content#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,22 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <marker date="1501406640388" expanded="true" signature="667:717" ph="select * fro... wtfuser" />
-            <marker date="1501406640388" expanded="true" signature="1023:1073" ph="select * fro... wtfuser" />
-            <marker date="1501406640388" expanded="true" signature="1219:1286" ph="insert into wtfuser... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/payorder/payorder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="72" column="47" lean-forward="true" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-            <element signature="n#PayList#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,25 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
           <caret line="362" column="5" lean-forward="true" selection-start-line="362" selection-start-column="5" selection-end-line="362" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="n#Store#0" expanded="false" />
-            <element signature="n#Header#0" expanded="false" />
-            <element signature="n#Banner#0" expanded="false" />
-            <element signature="n#Con#0" expanded="false" />
-            <element signature="n#Details#0" expanded="false" />
-            <element signature="n#Footer#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#onActivity#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#onCart#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#addCart#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#closes#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#closecart#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#open#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#class#0;n#GoodsDetails#0" expanded="false" />
-            <element signature="n#!!block;n#numbers#0;n#GoodsDetails#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,9 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,31 +819,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/comment/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
+            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
+            <element signature="n#!!block;n#lyxgogo#0;n#App#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js">
+    <entry file="file://$PROJECT_DIR$/src/components/wtfhome/wtfhome.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="281" column="21" lean-forward="true" selection-start-line="281" selection-start-column="21" selection-end-line="281" selection-end-column="21" />
+        <state relative-caret-position="440">
+          <caret line="248" column="26" lean-forward="true" selection-start-line="248" selection-start-column="26" selection-end-line="248" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#181#509#0" expanded="false" />
-            <element signature="n#Zjt_fuk#0" expanded="false" />
-            <element signature="n#Zjt_Fahuo#0" expanded="false" />
-            <element signature="n#Zjt_Shouhuo#0" expanded="false" />
-            <element signature="n#Zjt_wanc#0" expanded="false" />
-            <element signature="n#Zjt_OrderList#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dizhi/dizhi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="39" />
+        <state relative-caret-position="209">
+          <caret line="849" column="30" lean-forward="true" selection-start-line="849" selection-start-column="30" selection-end-line="849" selection-end-column="30" />
           <folding>
+            <element signature="e#0#26#0" expanded="true" />
             <element signature="n#!!block;n#componentDidMount#0;n#Dizhi#0" expanded="false" />
             <element signature="e#3678#3849#0" expanded="false" />
             <element signature="e#3895#4311#0" expanded="false" />
@@ -911,47 +882,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/comment/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/zjt_pay/zjt_pay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="172" column="35" lean-forward="false" selection-start-line="172" selection-start-column="35" selection-end-line="172" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#lyxgogo#0;n#App#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/wtfhome/wtfhome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="360" column="25" lean-forward="true" selection-start-line="360" selection-start-column="25" selection-end-line="360" selection-end-column="25" />
+        <state relative-caret-position="210">
+          <caret line="160" column="18" lean-forward="true" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#40#79#0" expanded="true" />
             <element signature="e#324#991#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/payorder/payorder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#PayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="82" column="32" lean-forward="true" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#181#509#0" expanded="false" />
+            <element signature="n#Zjt_fuk#0" expanded="false" />
+            <element signature="n#Zjt_Fahuo#0" expanded="false" />
+            <element signature="n#Zjt_Shouhuo#0" expanded="false" />
+            <element signature="n#Zjt_wanc#0" expanded="false" />
+            <element signature="n#Zjt_OrderList#0" expanded="false" />
           </folding>
         </state>
       </provider>

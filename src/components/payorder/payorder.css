@@ -161,11 +161,11 @@ body,html{
     width: 0.7rem;
     height: 0.88rem;
 }
-.content{
+.d-content{
     width: 100%;
     height: auto;
 }
-.content .con{
+.d-content .con{
     width: 100%;
     height: 2.88rem;
     background: #fafafa;
@@ -173,63 +173,65 @@ body,html{
     margin-bottom: 0.28rem;
 
 }
-.content .con:last-child{
+.d-content .con:last-child{
     margin-bottom: 0;
 }
-.content ul li{
+.d-content ul li{
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
 }
-.content ul li div:nth-child(1){
+.d-content ul li div:nth-child(1){
     flex: 2.5;
     background: url("01.jpg") no-repeat;
 }
-.content ul li div:nth-child(2){
+.d-content ul li div:nth-child(2){
     flex: 4;
 }
-.content ul li div:nth-child(2) ul{
+.d-content ul li div:nth-child(2) ul{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-.content ul li div:nth-child(2) ul li{
+.d-content ul li div:nth-child(2) ul li{
     width: 100%;
     height: 1.1rem;
 }
-.content ul li div:nth-child(2) ul li:nth-child(1){
+.d-content ul li div:nth-child(2) ul li:nth-child(1){
     display: flex;
 }
-.content ul li div:nth-child(2) ul li:nth-child(1) h1{
+.d-content ul li div:nth-child(2) ul li:nth-child(1) h1{
     flex: 4;
     height: 100%;
     font-size: 0.36rem;
     font-weight: 400;
 }
-.content ul li div:nth-child(2) ul li:nth-child(1) h2{
+.d-content ul li div:nth-child(2) ul li:nth-child(1) h2{
     flex: 1.5;
     height: 100%;
     font-size: 0.36rem;
     font-weight: 400;
 
 }
-.content ul li div:nth-child(2) ul li:nth-child(2){
+.d-content ul li div:nth-child(2) ul li:nth-child(2){
     display: flex;
 }
-.content ul li div:nth-child(2) ul li:nth-child(2) p:nth-child(1){
+.d-content ul li div:nth-child(2) ul li:nth-child(2) p:nth-child(1){
     flex: 4;
     font-size: 0.36rem;
     font-weight: 400;
     color: #838383;
+    display: flex;
+    justify-content: flex-end;
 }
-.content ul li div:nth-child(2) ul li:nth-child(2) p:nth-child(2){
+.d-content ul li div:nth-child(2) ul li:nth-child(2) p:nth-child(2){
     display: flex;
     flex: 1;
     font-size: 0.36rem;
     font-weight: 400;
-    justify-content: flex-end;
+    justify-d-content: flex-end;
  }
 .peisong{
     width: 100%;
@@ -300,7 +302,19 @@ body,html{
     flex: 1.2;
 
 }
-.footers div:nth-child(2) a{
+/*.footers div:nth-child(2) a{*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: #fe4543;*/
+    /*font-size: 0.44rem;*/
+    /*color: #fff;*/
+
+
+/*}*/
+.footers div:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,8 +323,6 @@ body,html{
     background: #fe4543;
     font-size: 0.44rem;
     color: #fff;
-
-
 }
 .footers div:nth-child(1){
     display: flex;

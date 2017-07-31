@@ -52,7 +52,50 @@ class Lunbo extends React.Component {
     }
 }
 class L_add extends Component{
-    render() {
+    constructor(){
+        super();
+        this.getnum=this.getnum.bind(this)
+    }
+    getnum(v) {
+        if (!localStorage.wtfbk) {
+            let a = [];
+            let c = v;
+            c.num = 1;
+            a.push(c);
+            localStorage.wtfbk = JSON.stringify(a);
+            document.querySelector('.wtfsuccess').style.display = 'block';
+            setTimeout(() => document.querySelector('.wtfsuccess').style.display = 'none', 1000)
+            let im=document.querySelector(`.a${v.id}`)
+            im['src']='../../img/wtfgoushop1.png'
+        } else {
+            let r = JSON.parse(localStorage.wtfbk).filter((vv, i) => {
+                return v.id == vv.id;
+            })
+            if (!r.length) {
+                let b = JSON.parse(localStorage.wtfbk);
+                let c = v;
+                c.num = 1;
+                b.push(c);
+                localStorage.wtfbk = JSON.stringify(b);
+                document.querySelector('.wtfsuccess').style.display = 'block';
+                setTimeout(() => document.querySelector('.wtfsuccess').style.display = 'none', 1000)
+                let im=document.querySelector(`.a${v.id}`)
+                im['src']='../../img/wtfgoushop1.png'
+            } else {
+                // document.querySelector('.wtfsucc').style.display='block';
+                // setTimeout(()=>document.querySelector('.wtfsucc').style.display='none',1000)
+                // let b = JSON.parse(localStorage.wtfbk);
+                // let c = b.map((vv, i) => {
+                //     if (vv.id == v.id) {
+                //         vv.num++;
+                //     }
+                //     return (vv)
+                // });
+                // localStorage.wtfbk = JSON.stringify(c);
+            }
+        }
+    }
+    render(){
         return (
             <div className="lyx_zhe" >
                 {/*<div className="">加入购物车成功</div>*/}
@@ -84,11 +127,11 @@ class L_add extends Component{
                             </div>
                             <div className="lyx_right">
                                 <ul>
-                                    <li>-</li>
-                                    <li className="lyx_addadd">1</li>
-                                    <li className="lyx_addnum" onClick={(e)=>{
-
-                                    }}>+</li>
+                                    <li className={`${this.props.number === 1 ? '' : 'lyx_jian' }`}
+                                        onClick={() => this.props.numbers('-')}>-
+                                    </li>
+                                    <li>{this.props.number}</li>
+                                    <li onClick={() => this.props.numbers('+')}>+</li>
                                 </ul>
                             </div>
                         </div>
@@ -102,9 +145,17 @@ class L_add extends Component{
 
                             let lyxsuc=document.querySelector('.wtfsuccess')
                             lyxsuc.style.display='block'
+                            this.getnum(this.props.lyxgo)
                             setTimeout(()=>lyxsuc.style.display='none',1000)
                         }}>加入购物车</li>
-                        <li className="lyx_two">立即购买</li>
+                        <Link to="/payorder" onClick={(e)=>{
+                            let body=document.querySelector('body')
+                            body.style.overflow='visible';
+                            let asd=document.querySelector('.lyx_zhe')
+                            asd.style.display='none'
+                        }}>
+                            <li className="lyx_two">立即购买</li>
+                        </Link>
                     </ul>
                 </div>
             </div>
@@ -112,42 +163,35 @@ class L_add extends Component{
     }
 }
 class Lib extends Component {
-    getnum(v) {
-        if (!localStorage.wtfbk) {
-            let a = [];
-            let c = v;
-            c.num = 1;
-            a.push(c);
-            localStorage.wtfbk = JSON.stringify(a);
-            document.querySelector('.wtfsuccess').style.display='block';
-            setTimeout(()=>document.querySelector('.wtfsuccess').style.display='none',1000)
-        } else {
-            let r = JSON.parse(localStorage.wtfbk).filter((vv, i) => {
-                return v.id == vv.id;
+    constructor(){
+        super();
+        this.getnum=this.getnum.bind(this)
+    }
+    getnum(id){
+        if(!localStorage.wtfbk){
+            this.props.lyxgogo(id)
+            let body=document.querySelector('body')
+            body.style.overflow='hidden';
+            let asd=document.querySelector('.lyx_zhe')
+            asd.style.display='block';
+        }else{
+            let lj2=JSON.parse(localStorage.wtfbk)
+            let r=lj2.filter((v,i)=>{
+                return v.id==id.id;
             })
-            if (!r.length) {
-                let b = JSON.parse(localStorage.wtfbk);
-                let c = v;
-                c.num = 1;
-                b.push(c);
-                localStorage.wtfbk = JSON.stringify(b);
-                document.querySelector('.wtfsuccess').style.display='block';
-                setTimeout(()=>document.querySelector('.wtfsuccess').style.display='none',1000)
-            } else {
-                // document.querySelector('.wtfsucc').style.display='block';
-                // setTimeout(()=>document.querySelector('.wtfsucc').style.display='none',1000)
-                // let b = JSON.parse(localStorage.wtfbk);
-                // let c = b.map((vv, i) => {
-                //     if (vv.id == v.id) {
-                //         vv.num++;
-                //     }
-                //     return (vv)
-                // });
-                // localStorage.wtfbk = JSON.stringify(c);
+            if(r.length){
+                document.querySelector('.wtfsucc').style.display = 'block';
+                setTimeout(() => document.querySelector('.wtfsucc').style.display = 'none', 1000)
+            }else{
+                this.props.lyxgogo(id)
+                let body=document.querySelector('body')
+                body.style.overflow='hidden';
+                let asd=document.querySelector('.lyx_zhe')
+                asd.style.display='block';
             }
+
         }
     }
-
     render() {
         return (
             <div>
@@ -171,23 +215,16 @@ class Lib extends Component {
                                         <div className="wtfright">
                                             <p>{v.title}</p>
                                             <h3>￥{v.price}</h3>
-                                            <div title={v.id} className="wtfgowu">
+                                            <div title={v.id} className={`wtfgowu `}>
                                                 <img src={`
                                                 ${localStorage.wtfbk?
                                                     (JSON.parse(localStorage.wtfbk).filter(a=>a.id==v.id).length==0?
                                                         '../../img/wtfgoushop.png':'../../img/wtfgoushop1.png'):
-                                                        '../../img/wtfgoushop.png'} `} alt=""
+                                                    '../../img/wtfgoushop.png'} `} alt=""
+                                                className={`a${v.id}`}
                                                      onClick={(e)=>{
                                                          e.preventDefault();
-                                                         e.target.src="../../img/wtfgoushop1.png"
-                                                         this.getnum(v,this)
-
-
-                                                         let body=document.querySelector('body')
-                                                         body.style.overflow='hidden';
-                                                         let asd=document.querySelector('.lyx_zhe')
-                                                         asd.style.display='block'
-                                                         this.props.lyxgogo(v)
+                                                         this.getnum(v)
                                                      }}
                                                 />
                                             </div>
@@ -200,7 +237,7 @@ class Lib extends Component {
                     {
                         this.props.wtfbook2 ? this.props.wtfbook2.map((v, i) =>
                             <li key={v.id} className="wtfdeg1">
-                                <Link to={`gj/${v.id}`}>
+                                <Link to={`/detail/${v.id}`}>
                                     <div className="wtfdeg11">
                                         <img src={v.img} alt=""/>
                                         <div className="wtfright">
@@ -212,11 +249,9 @@ class Lib extends Component {
                                                     (JSON.parse(localStorage.wtfbk).filter(a=>a.id==v.id).length==0?
                                                         '../../img/wtfgoushop.png':'../../img/wtfgoushop1.png'):
                                                     '../../img/wtfgoushop.png'} `} alt=""
+                                                     className={`a${v.id}`}
                                                      onClick={(e)=>{
                                                          e.preventDefault();
-                                                         e.target.src="../../img/wtfgoushop1.png"
-                                                         this.getnum(v,this)
-
                                                          let body=document.querySelector('body')
                                                          body.style.overflow='hidden';
                                                          let asd=document.querySelector('.lyx_zhe')
@@ -234,7 +269,7 @@ class Lib extends Component {
                     {
                         this.props.wtfbook3 ? this.props.wtfbook3.map((v, i) =>
                             <li key={v.id} className="wtfdeg1">
-                                <Link to={`gj/${v.id}`}>
+                                <Link to={`/detail/${v.id}`}>
                                     <div className="wtfdeg11">
                                         <img src={v.img} alt=""/>
                                         <div className="wtfright">
@@ -246,11 +281,9 @@ class Lib extends Component {
                                                     (JSON.parse(localStorage.wtfbk).filter(a=>a.id==v.id).length==0?
                                                         '../../img/wtfgoushop.png':'../../img/wtfgoushop1.png'):
                                                     '../../img/wtfgoushop.png'} `} alt=""
+                                                     className={`a${v.id}`}
                                                      onClick={(e)=>{
                                                          e.preventDefault();
-                                                         e.target.src="../../img/wtfgoushop1.png"
-                                                         this.getnum(v,this)
-
                                                          let body=document.querySelector('body')
                                                          body.style.overflow='hidden';
                                                          let asd=document.querySelector('.lyx_zhe')
@@ -268,7 +301,7 @@ class Lib extends Component {
                     {
                         this.props.wtfbook4 ? this.props.wtfbook4.map((v, i) =>
                             <li key={v.id} className="wtfdeg1">
-                                <Link to={`gj/${v.id}`}>
+                                <Link to={`/detail/${v.id}`}>
                                     <div className="wtfdeg11">
                                         <img src={v.img} alt=""/>
                                         <div className="wtfright">
@@ -280,11 +313,9 @@ class Lib extends Component {
                                                     (JSON.parse(localStorage.wtfbk).filter(a=>a.id==v.id).length==0?
                                                         '../../img/wtfgoushop.png':'../../img/wtfgoushop1.png'):
                                                     '../../img/wtfgoushop.png'} `} alt=""
+                                                     className={`a${v.id}`}
                                                      onClick={(e)=>{
                                                          e.preventDefault();
-                                                         e.target.src="../../img/wtfgoushop1.png"
-                                                         this.getnum(v,this)
-
                                                          let body=document.querySelector('body')
                                                          body.style.overflow='hidden';
                                                          let asd=document.querySelector('.lyx_zhe')
@@ -350,20 +381,43 @@ class Wtffoot extends Component {
     }
 }
 class WtfHome extends Component {
+    constructor() {
+        super()
+        this.state = {
+            number: 1,
+        }
+        this.numbers = this.numbers.bind(this);
+    }
+    numbers(v) {
+        var num = this.state.number;
+        if (v === "+") {
+            num++;
+            this.setState({
+                number: num
+            })
+        } else if (v === '-') {
+            if (num !== 1) {
+                num--;
+                this.setState({
+                    number: num
+                })
+            }
 
+        }
+    }
     render() {
         // console.log(this.props.lyxgo)
         let title1 = '基路书店';
         return (
             <div className="wtfhome">
-                <L_add lyxgo={this.props.lyxgo} lyxnum={this.props.lyxnum}/>
+                <L_add lyxgo={this.props.lyxgo} number={this.state.number} numbers={this.numbers}/>
                 <Header title={title1}/>
                 <Lunbo />
                 <div className="wtfsuccess">
                     加入购物车成功
                 </div>
                 <div className="wtfsucc">
-                    {/*请在购物车中查看*/}
+                    请在购物车中查看
                 </div>
                 <div className="wtfbig1">
                     <img src="../../img/wtfmainbig.png" alt=""/>

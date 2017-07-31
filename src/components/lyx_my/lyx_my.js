@@ -61,12 +61,11 @@ class My extends Component {
                     </ul>
                 </div>
                 <div className="lyx_shop">
-                    <a href="#">
+                    <Link to="/shoppingCart">
                         <div>
                             <h3>购物车</h3>
-                            <div className="lyx_num">3</div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <Footer/>
             </div>

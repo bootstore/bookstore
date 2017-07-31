@@ -79,7 +79,7 @@ class Zjt_Conlist extends Component {
                         <a className="zjt_conbox4left" href="">
                             取消订单
                         </a>
-                        <a className="zjt_conbox4right" href="">
+                        <a className="zjt_conbox4right" href="/zjtpay">
                             确认付款
                         </a>
                     </div>
