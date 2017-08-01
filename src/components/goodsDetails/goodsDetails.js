@@ -299,10 +299,12 @@ class GoodsDetails extends React.Component {
                 title:this.state.data.name,
                 num:this.state.number,
             }
-            arr=arr.filter(v=>{
+            let s=arr.filter(v=>{
                 v.id!==a.id
             })
-            arr.unshift(a);
+            if(!s.length){
+                arr.unshift(a);
+            }
             localStorage.wtfbk=JSON.stringify(arr);
         }
         else if ($(".close").html() === '下一步') {

@@ -78,8 +78,11 @@ class L_add extends Component{
                 c.num = 1;
                 b.push(c);
                 localStorage.wtfbk = JSON.stringify(b);
-                document.querySelector('.wtfsuccess').style.display = 'block';
-                setTimeout(() => document.querySelector('.wtfsuccess').style.display = 'none', 1000)
+                if( document.querySelector('.wtfsuccess')){
+                    document.querySelector('.wtfsuccess').style.display = 'block';
+                    setTimeout(() => document.querySelector('.wtfsuccess').style.display = 'none', 1000)
+                }
+
                 let im=document.querySelector(`.a${v.id}`)
                 im['src']='../../img/wtfgoushop1.png'
             } else {

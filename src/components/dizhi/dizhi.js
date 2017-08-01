@@ -912,9 +912,9 @@ class Dizhi extends React.Component {
                     <div className="save" id="save">
                         <sapn>保存</sapn>
                     </div>
-                    <div className="cancel">
+                    <a href="/payorder" className="cancel">
                         取消
-                    </div>
+                    </a>
 
                     <div className="zhezhao1">
                         请填写收货人
