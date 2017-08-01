@@ -263,7 +263,7 @@ class Zjt_wanc extends Component {
                         <a className="zjt_conbox4left" href="">
                             去晒评价
                         </a>
-                        <a className="zjt_conbox4right" href="">
+                        <a className="zjt_conbox4right" href="/">
                            再次购买
                         </a>
                     </div>

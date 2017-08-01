@@ -180,7 +180,20 @@
     margin-left:0.3rem;
 }
 
-.save{
+/*.save{
+    width:6.8rem;
+    height:1.1rem;
+    background:#43bc00;
+    margin:0 auto;
+    margin-top:0.2rem;
+    text-align:center;
+    line-height:1.1rem;
+    color:#fff;
+    font-size:0.3rem;
+}*/
+
+#save{
+    display: block;
     width:6.8rem;
     height:1.1rem;
     background:#43bc00;

@@ -1,0 +1,274 @@
+.shopBox {
+    padding: 0 0.22rem;
+}
+ .shoppingCart {
+    height: 0.88rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01rem solid #ebebeb;
+}
+
+.shoppingCart .back {
+    width: .26rem;
+    height: .36rem;
+    background: url("../../img/9_03.png") no-repeat center;
+    background-size: 0.36rem;
+    margin-left: .22rem;
+}
+ .shoppingCart h1 {
+    font-size: .36rem;
+    font-weight: 600;
+}
+
+.shoppingCart .xinxi {
+    width: .44rem;
+    height: .12rem;
+    background: url("../../img/10_06.png") no-repeat center;
+    background-size: 0.36rem;
+    margin-right: .22rem;
+}
+
+.shoppingCarts .title {
+    height: .94rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoppingCarts .right {
+    width: .36rem;
+    height: .36rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../../img/11.png") no-repeat 50%/cover;
+}
+
+.shoppingCarts .title .center {
+    display: flex;
+    width: 5.8rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shoppingCarts .title .center .home {
+    width: .27rem;
+    height: .27rem;
+    background: url("../../img/8_03.png") no-repeat 50%/cover;
+}
+
+.shoppingCarts .title .center h3 {
+    font-size: .27rem;
+}
+
+.shoppingCarts .title .center h3 a {
+    clolr: #272727;
+}
+
+.shoppingCarts .bianji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b0b0b0;
+    font-size: .22rem;
+}
+
+.shoppingCarts .goods {
+    height: 2rem;
+    width: 100%;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+}
+
+.shoppingCarts .goodsList {
+    display: flex;
+    align-items: center;
+    height: 1.8rem;
+    width: 6.6rem;
+    margin-left: .26rem;
+    margin-right: .3rem;
+}
+
+.shoppingCarts .goods .right {
+    margin-left: .22rem;
+}
+
+.shoppingCarts .goodsList .pic {
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url("../../img/1_03.png") no-repeat 50%/cover;
+}
+
+.shoppingCarts .goodsList .substance {
+    width: 4.18rem;
+    height: 100%;
+    margin-left: .22rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppingCarts .top {
+    display: flex;
+    flex: 1;
+    margin-top: .12rem;
+}
+
+.shoppingCarts .top i {
+    color: #2c2c2c;
+}
+
+.shoppingCarts .kuanshi {
+    width: 4.18rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    margin-top: .18rem;
+}
+
+.shoppingCarts .kuanshi i {
+    color: #8e8e8e;
+}
+
+.shoppingCarts .price {
+    width: 4.18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.shoppingCarts .price i {
+    color: #d35956;
+}
+
+.shoppingCarts .balance {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 2.4rem;
+    width: 100%;
+    border-top: .01rem solid #cfcfcf;
+}
+
+.shoppingCarts .balance .ding {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.shoppingCarts .balance .ding .right {
+    margin-left: .22rem;
+}
+
+.shoppingCarts .balance .ding .center {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -1.52rem;
+}
+
+.shoppingCarts .balance .ding .center i {
+    color: #5e5e5e;
+}
+
+.shoppingCarts .ding .youBox {
+    width: 4.4rem;
+    display: flex;
+}
+
+.shoppingCarts .ding .youBox .jiage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: .2rem;
+    margin-top: .13rem;
+}
+
+.shoppingCarts .heji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.shoppingCarts .heji i {
+    color: #de676d;
+}
+
+.shoppingCarts .yunfei i {
+    color: #a5a5a5;
+}
+
+.shoppingCarts .yunfei {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.shoppingCarts .ding .youBox .over {
+    background: #fe4543;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoppingCarts .ding .youBox .over i {
+    color: #fff;
+}
+
+
+
+.shoppingCarts .operate {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.shoppingCarts .operate .jian {
+    width: 0.36rem;
+    height: 0.36rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0.1rem;
+    background-image: url(../..//img/wate6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shoppingCarts .operate .num1 {
+    width: 0.81rem;
+    height: 0.36rem;
+    display: flex;
+    border: 0.02rem solid #ced9e8;
+    margin-right: 0.1rem;
+    border-radius: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.26rem;
+    color: #858585;
+    font-weight: 600;
+}
+
+.shoppingCarts .operate .jia {
+    width: 0.36rem;
+    height: 0.36rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0.1rem;
+    background-image: url(../../img/water7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+

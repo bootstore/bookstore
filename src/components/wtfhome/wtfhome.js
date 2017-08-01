@@ -12,6 +12,7 @@ import "./wtfhome.css";
 import "./lyxadd.css";
 import Footer from '../comment/footer';
 import Header from '../comment/header';
+import FirstHeader from '../comment/firstheader';
 
 
 /*
@@ -411,7 +412,7 @@ class WtfHome extends Component {
         return (
             <div className="wtfhome">
                 <L_add lyxgo={this.props.lyxgo} number={this.state.number} numbers={this.numbers}/>
-                <Header title={title1}/>
+                <FirstHeader title={title1}/>
                 <Lunbo />
                 <div className="wtfsuccess">
                     加入购物车成功

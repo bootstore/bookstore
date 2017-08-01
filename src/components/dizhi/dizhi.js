@@ -1,7 +1,11 @@
 import React from 'react';
 import './dizhi.css';
 import Header from '../comment/header';
-
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
 
 
 class Dizhi extends React.Component {
@@ -33,7 +37,6 @@ class Dizhi extends React.Component {
             cancel.onclick = function () {
                 kongbai.style.display = 'block';
             }
-
             save.onclick = function () {
                 if (name1.value === "") {
                     zhezhao1.style.display = "block";
@@ -61,6 +64,7 @@ class Dizhi extends React.Component {
                 }
                 else {
                     choose1.style.display = 'block';
+                    // window.location.pathname = '/payorder';
                 }
                 var arr1 = [];
                 var arr = [localStorage.name, localStorage.phone, localStorage.email, localStorage.address]
@@ -881,13 +885,13 @@ class Dizhi extends React.Component {
 
                     <div className="name">
                         <h1>联系电话</h1>
-                        <input type="text" placeholder="手机或固定电话" id="phone" autocomplete="on"/>
+                        <input type="text" placeholder="手机或固定电话" id="phone" />
                     </div>
                     <div className="xiahuaxian1">
                     </div>
                     <div className="name">
                         <h1>详细地址</h1>
-                        <input type="text" placeholder="街道门牌信息" id="address" autocomplete="on"/>
+                        <input type="text" placeholder="街道门牌信息" id="address" />
                     </div>
                     <div className="xiahuaxian1">
 
@@ -896,14 +900,17 @@ class Dizhi extends React.Component {
 
                     <div className="name">
                         <h1>邮政编码</h1>
-                        <input type="text" placeholder="邮政编码(选填)" id="email" autocomplete="on"/>
+                        <input type="text" placeholder="邮政编码(选填)" id="email" />
                     </div>
                     <div className="xiahuaxian">
 
                     </div>
 
-                    <div className="save">
-                        保存
+                    {/*<a href='/payorder' className="save" id="save">
+                        <sapn>保存</sapn>
+                    </a>*/}
+                    <div className="save" id="save">
+                        <sapn>保存</sapn>
                     </div>
                     <div className="cancel">
                         取消

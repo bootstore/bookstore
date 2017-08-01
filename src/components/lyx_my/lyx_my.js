@@ -4,7 +4,7 @@
 import React, {Component} from 'react';
 import './lyx_my.css';
 import Footer from '../comment/footer';
-import Header from '../comment/header';
+import FirstHeader from '../comment/firstheader';
 import {
     // BrowserRouter as Router,
     // Route,
@@ -16,7 +16,7 @@ class My extends Component {
         let title1 = '个人中心';
         return (
             <div>
-                <Header title={title1}/>
+                <FirstHeader title={title1}/>
                 <div className="lyx_img">
                     <div className="lyx_touxiang">
                         <img src="/img/lyx_img/lyx_img1.png" alt=""/>

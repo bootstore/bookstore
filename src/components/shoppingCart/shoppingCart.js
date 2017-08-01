@@ -7,7 +7,7 @@ import {
     Link
 } from 'react-router-dom'
 import Footer from '../comment/footer';
-import Header from '../comment/header';
+import FirstHeader from '../comment/firstheader';
 import payorder from '../payorder/payorder';
 
 class ShopBox extends React.Component {
@@ -35,23 +35,27 @@ class Content extends React.Component {
         return (
             <div className="goods">
                 {/*<div className="right"></div>*/}
-                <div className="goodsList">
-                    <div className="pic"></div>
-                    <div className="substance">
-                        <div className="top"><i>时尚拉丝十字架戒指情侣对戒男女款灵语银戒指</i></div>
-                        <span className="kuanshi"><i>女款10#</i></span>
-                        <span className="price">
-                                <i>￥ 139.00</i>
+                {
+                    this.props.data.map(v => (
+                    <div className="goodsList">
+                        <div className="pic"><img src={v.img} alt=""/></div>
+                        <div className="substance">
+                            <div className="top"><i>{v.title}</i></div>
+                            <span className="kuanshi"><i>女款10#</i></span>
+                            <span className="price">
+                                <i>￥ {v.price}</i>
                                 <div className="detail">
                                     <li className="operate">
                                         <div className="jian"></div>
-                                        <div className="num1">7</div>
+                                        <div className="num1">{v.num}</div>
                                         <div className="jia"></div>
                                     </li>
                                 </div>
                         </span>
+                        </div>
                     </div>
-                </div>
+                    ))
+                }
             </div>
         )
     }
@@ -76,17 +80,55 @@ class Balance extends React.Component {
 }
 
 class shoppingCart extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            arr: []
+        }
+    }
+    componentDidMount() {
+        console.log(localStorage.wtfbk);
+        if (localStorage.wtfbk) {
+            console.log(1);
+            this.setState({
+                arr: JSON.parse(localStorage.wtfbk)
+            })
+            let cc = JSON.parse(localStorage.wtfbk);
+            console.log(cc.number)
+
+        } else {
+            console.log(2);
+            this.setState({
+                arr: []
+            })
+        }
+        console.log(this.state.arr);
+    }
+
     render() {
         let title1 = '购物车';
+        console.log(this.state.arr);
+        let arrs = this.state.arr;
+        let prices = 0;
+        let numss = 0;
+        if(arrs.length){
+            let a1 = arrs[0];
+            console.log(this.state.arr);
+            console.log(a1);
+            prices = a1.price;
+            numss = a1.num;
+        }
+        let total = prices * numss;
+        console.log(total);
         return (
             <div className="shoppingCarts">
-                <Header title={title1}/>
+                <FirstHeader title={title1}/>
                 <ShopBox/>
-                <Content/>
+                <Content data={arrs}/>
                 <div className="balance">
                     <Balance/>
                 </div>
-                    <Footer/>
+                <Footer/>
             </div>
         )
     }

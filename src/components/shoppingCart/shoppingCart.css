@@ -100,7 +100,12 @@
 .shoppingCarts .goodsList .pic {
     width: 1.8rem;
     height: 1.8rem;
-    background: url("../../img/1_03.png") no-repeat 50%/cover;
+    /*background: url("../../img/1_03.png") no-repeat 50%/cover;*/
+}
+
+.shoppingCarts .goodsList .pic img{
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .shoppingCarts .goodsList .substance {
