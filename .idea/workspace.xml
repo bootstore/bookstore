@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5964f62d-b8d7-46b0-891b-a66333bca489" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components.7z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/payorder.7z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/shoppingCart.7z" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.css" afterPath="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js" afterPath="$PROJECT_DIR$/src/components/zjt_orderlist/zjt_orderlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/说明.txt" afterPath="$PROJECT_DIR$/说明.txt" />
-    </list>
+    <list default="true" id="5964f62d-b8d7-46b0-891b-a66333bca489" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +15,8 @@
       <file leaf-file-name="wtfhome.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/wtfhome/wtfhome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+            <state relative-caret-position="893">
+              <caret line="94" column="24" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
               <folding>
                 <element signature="e#374#1041#0" expanded="false" />
                 <element signature="n#Lunbo#0" expanded="false" />
@@ -37,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/dizhi/dizhi.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="204" column="21" lean-forward="true" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+              <caret line="204" column="21" lean-forward="false" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -51,7 +43,14 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#ShopBox#0" expanded="false" />
-                <element signature="n#Balance#0" expanded="false" />
+                <marker date="1501674414433" expanded="true" signature="913:1706" ph="{...}" />
+                <marker date="1501674414433" expanded="true" signature="928:1706" ph="{...}" />
+                <marker date="1501674414433" expanded="true" signature="959:1706" ph="&lt;div/&gt;" />
+                <marker date="1501674414433" expanded="true" signature="1120:1706" ph="&lt;div/&gt;" />
+                <marker date="1501674414433" expanded="true" signature="1249:1706" ph="&lt;div/&gt;" />
+                <marker date="1501674414433" expanded="true" signature="1451:1706" ph="&lt;span/&gt;" />
+                <marker date="1501674414433" expanded="true" signature="1559:1706" ph="&lt;div/&gt;" />
+                <marker date="1501674414433" expanded="true" signature="1620:1706" ph="&lt;li/&gt;" />
               </folding>
             </state>
           </provider>
@@ -72,8 +71,8 @@
       <file leaf-file-name="表单验证.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../../简历/表单验证.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="323">
+              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -214,7 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,6 +291,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -438,17 +437,18 @@
       <workItem from="1501490803042" duration="15743000" />
       <workItem from="1501549072039" duration="13701000" />
       <workItem from="1501586497510" duration="1404000" />
+      <workItem from="1501674572577" duration="164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139936000" />
+    <option name="totallyTimeSpent" value="140100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="194" y="0" width="1058" height="728" extended-state="0" />
+    <frame x="194" y="0" width="1058" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20941883" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21342686" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -511,7 +511,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/npm.md" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -687,11 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="90" column="23" lean-forward="false" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#40#67#0" expanded="false" />
-            <element signature="n#NormalLoginForm#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,11 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#constructor#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#componentDidMount#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#lyxgogo#0;n#App#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="92" column="56" lean-forward="true" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +780,14 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="n#ShopBox#0" expanded="false" />
-            <element signature="n#Balance#0" expanded="false" />
+            <marker date="1501674414433" expanded="true" signature="913:1706" ph="{...}" />
+            <marker date="1501674414433" expanded="true" signature="928:1706" ph="{...}" />
+            <marker date="1501674414433" expanded="true" signature="959:1706" ph="&lt;div/&gt;" />
+            <marker date="1501674414433" expanded="true" signature="1120:1706" ph="&lt;div/&gt;" />
+            <marker date="1501674414433" expanded="true" signature="1249:1706" ph="&lt;div/&gt;" />
+            <marker date="1501674414433" expanded="true" signature="1451:1706" ph="&lt;span/&gt;" />
+            <marker date="1501674414433" expanded="true" signature="1559:1706" ph="&lt;div/&gt;" />
+            <marker date="1501674414433" expanded="true" signature="1620:1706" ph="&lt;li/&gt;" />
           </folding>
         </state>
       </provider>
@@ -815,14 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2261">
           <caret line="957" column="30" lean-forward="false" selection-start-line="957" selection-start-column="30" selection-end-line="957" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#componentDidMount#0;n#Dizhi#0" expanded="false" />
-            <element signature="e#3823#3994#0" expanded="false" />
-            <element signature="e#4040#4456#0" expanded="false" />
-            <element signature="e#4497#4931#0" expanded="false" />
-            <element signature="e#4969#48803#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../简历/表单验证.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="323">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -856,14 +843,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="306" column="13" lean-forward="false" selection-start-line="306" selection-start-column="13" selection-end-line="306" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/wtfhome/wtfhome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="94" column="24" lean-forward="true" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+        <state relative-caret-position="893">
+          <caret line="94" column="24" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
           <folding>
             <element signature="e#374#1041#0" expanded="false" />
             <element signature="n#Lunbo#0" expanded="false" />
@@ -871,10 +857,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dizhi/dizhi.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="204" column="21" lean-forward="true" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
+          <caret line="204" column="21" lean-forward="false" selection-start-line="204" selection-start-column="21" selection-end-line="204" selection-end-column="21" />
           <folding />
         </state>
       </provider>
