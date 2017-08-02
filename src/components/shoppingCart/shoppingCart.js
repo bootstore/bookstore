@@ -46,9 +46,14 @@ class Content extends React.Component {
                                 <i>￥ {v.price}</i>
                                 <div className="detail">
                                     <li className="operate">
-                                        <div className="jian"></div>
-                                        <div className="num1">{v.num}</div>
-                                        <div className="jia"></div>
+                                        <div className="jian" onClick={()=>this.props.number('-',v.id)}>
+
+                                        </div>
+                                        <div className="num1">{
+                                            (this.props.data.filter(value=>value.id===v.id))[0].num}</div>
+                                        <div className="jia" onClick={()=>this.props.number('+',v.id)}>
+
+                                        </div>
                                     </li>
                                 </div>
                         </span>
@@ -61,35 +66,20 @@ class Content extends React.Component {
     }
 }
 
-class Balance extends React.Component {
-    render() {
-        return (
-            <div className="ding">
-                {/*<div className="right"></div>*/}
-                {/*<div className="center"><i>全选</i></div>*/}
-                <div className="youBox">
-                    <div className="jiage">
-                        <span className="heji"><i>合计:￥ 452.80</i></span>
-                        <span className="yunfei"><i>不含运费</i></span>
-                    </div>
-                    <Link to="/payorder" className="over"><i>结算</i></Link>
-                </div>
-            </div>
-        )
-    }
-}
 
 class shoppingCart extends React.Component {
     constructor() {
         super();
         this.state = {
-            arr: []
+            total:0,
+            arr:[],
         }
+        this.number=this.number.bind(this);
     }
-    componentDidMount() {
+
+    componentDidMount(){
         console.log(localStorage.wtfbk);
         if (localStorage.wtfbk) {
-            console.log(1);
             this.setState({
                 arr: JSON.parse(localStorage.wtfbk)
             })
@@ -102,31 +92,75 @@ class shoppingCart extends React.Component {
                 arr: []
             })
         }
-        console.log(this.state.arr);
+
+
+
+
+    }
+
+    number(m,id) {
+        var number = (this.state.arr.filter(v => id === v.id))[0].num;
+        if (m === "+") {
+            number++;
+            var arr = this.state.arr.map(v => {
+                if (v.id === id) {
+                    v.num = number;
+                }
+                return v;
+            })
+            this.setState({
+                arr: arr
+            })
+            localStorage.wtfbk=JSON.stringify(arr)
+        } else if (m === "-") {
+            number--;
+            if(number<=0){
+                number=0;
+            }
+            var arr = this.state.arr.map(v => {
+                if (v.id === id) {
+                    v.num = number;
+                }
+                return v;
+            })
+            this.setState({
+                arr: arr
+            })
+            localStorage.wtfbk=JSON.stringify(arr)
+        }
+
+        let arrs = this.state.arr;
+        let total=0;
+        arrs.forEach((v)=>{
+            total += v.price * v.num;
+        })
+        this.setState({
+            total: total
+        })
+
     }
 
     render() {
         let title1 = '购物车';
-        console.log(this.state.arr);
         let arrs = this.state.arr;
-        let prices = 0;
-        let numss = 0;
-        if(arrs.length){
-            let a1 = arrs[0];
-            console.log(this.state.arr);
-            console.log(a1);
-            prices = a1.price;
-            numss = a1.num;
-        }
-        let total = prices * numss;
-        console.log(total);
+
         return (
             <div className="shoppingCarts">
                 <FirstHeader title={title1}/>
                 <ShopBox/>
-                <Content data={arrs}/>
+                <Content data={arrs} number={this.number}/>
                 <div className="balance">
-                    <Balance/>
+                    <div className="ding">
+                        {/*<div className="right"></div>*/}
+                        {/*<div className="center"><i>全选</i></div>*/}
+                        <div className="youBox">
+                            <div className="jiage">
+                                <span className="hejis"><i>合计:￥ {this.state.total}</i></span>
+                                <span className="yunfei"><i>不含运费</i></span>
+                            </div>
+                            <Link to="/payorder" className="over"><i>结算</i></Link>
+                        </div>
+                    </div>
                 </div>
                 <Footer/>
             </div>

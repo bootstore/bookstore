@@ -160,6 +160,7 @@
     height: 2.4rem;
     width: 100%;
     border-top: .01rem solid #cfcfcf;
+    background-color: #fff;
 }
 
 .shoppingCarts .balance .ding {
@@ -196,7 +197,7 @@
     margin-top: .13rem;
 }
 
-.shoppingCarts .heji {
+.shoppingCarts .hejis {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +205,7 @@
 
 }
 
-.shoppingCarts .heji i {
+.shoppingCarts .hejis i {
     color: #de676d;
 }
 
