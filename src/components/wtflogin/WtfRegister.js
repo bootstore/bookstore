@@ -74,7 +74,7 @@ class Wtflogin extends React.Component{
         return(
             <div className="wtflogin">
                 <img className="wtflogo" src="../../img/wtflogo.png" alt=""/>
-                <p className="wtfbt">基路書店</p>
+                <p className="wtfbt">博雅书城</p>
                 <div className="wtflog">
                     <WrappedNormalLoginForm />
                 </div>

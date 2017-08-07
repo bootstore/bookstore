@@ -33,7 +33,7 @@ class Zjt_pay extends Component {
                         </div>
                         <div className="zjt_payson2">
                             <div className="zjt_pay2wrap">
-                                <div className="zjt_pay2word">基路书店</div>
+                                <div className="zjt_pay2word">博雅书城</div>
                                 <div className="zjt_payprice">
                                     ￥239.20
                                 </div>

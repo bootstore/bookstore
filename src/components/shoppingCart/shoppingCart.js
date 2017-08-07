@@ -19,7 +19,7 @@ class ShopBox extends React.Component {
                         {/*<div className="right"></div>*/}
                         <div className="center">
                             <span className="home"></span>
-                            <h3><a href="#">基路书店</a></h3>
+                            <h3><a href="#">博雅书城</a></h3>
                         </div>
                         <i className="bianji">编辑</i>
                     </h2>
@@ -34,31 +34,32 @@ class Content extends React.Component {
     render() {
         return (
             <div className="goods">
-                {/*<div className="right"></div>*/}
+
                 {
-                    this.props.data.map(v => (
-                    <div className="goodsList">
-                        <div className="pic"><img src={v.img} alt=""/></div>
-                        <div className="substance">
-                            <div className="top"><i>{v.title}</i></div>
-                            <span className="kuanshi"><i>女款10#</i></span>
-                            <span className="price">
+
+                    this.props.data.map((v,i) => (
+                        <div className="goodsList">
+                            <div className="pic"><img src={v.img} alt=""/></div>
+                            <div className="substance">
+                                <div className="top"><i>{v.title}</i></div>
+                                <span className="kuanshi"><i>女款10#</i></span>
+                                <span className="price">
                                 <i>￥ {v.price}</i>
                                 <div className="detail">
                                     <li className="operate">
-                                        <div className="jian" onClick={()=>this.props.number('-',v.id)}>
+                                        <div className="jian" onClick={() => this.props.number('-', v.id,i)}>
 
                                         </div>
                                         <div className="num1">{
-                                            (this.props.data.filter(value=>value.id===v.id))[0].num}</div>
-                                        <div className="jia" onClick={()=>this.props.number('+',v.id)}>
+                                            (this.props.data.filter(value => value.id === v.id))[0].num}</div>
+                                        <div className="jia" onClick={() => this.props.number('+', v.id)}>
 
                                         </div>
                                     </li>
                                 </div>
                         </span>
+                            </div>
                         </div>
-                    </div>
                     ))
                 }
             </div>
@@ -71,35 +72,30 @@ class shoppingCart extends React.Component {
     constructor() {
         super();
         this.state = {
-            total:0,
-            arr:[],
+            total: 0,
+            arr: [],
         }
-        this.number=this.number.bind(this);
+        this.number = this.number.bind(this);
     }
 
-    componentDidMount(){
-        console.log(localStorage.wtfbk);
+    componentDidMount() {
         if (localStorage.wtfbk) {
             this.setState({
                 arr: JSON.parse(localStorage.wtfbk)
             })
-            let cc = JSON.parse(localStorage.wtfbk);
-            console.log(cc.number)
 
         } else {
-            console.log(2);
             this.setState({
                 arr: []
             })
         }
 
 
-
-
     }
 
-    number(m,id) {
-        var number = (this.state.arr.filter(v => id === v.id))[0].num;
+    number(m, id,i) {
+
+        var number = (this.state.arr.filter((v,i) => id === v.id))[0].num;
         if (m === "+") {
             number++;
             var arr = this.state.arr.map(v => {
@@ -111,11 +107,16 @@ class shoppingCart extends React.Component {
             this.setState({
                 arr: arr
             })
-            localStorage.wtfbk=JSON.stringify(arr)
+            localStorage.wtfbk = JSON.stringify(arr)
         } else if (m === "-") {
             number--;
-            if(number<=0){
-                number=0;
+            if (number <= 0) {
+                number = 0;
+                let a=this.state.arr;
+                a.splice(i,1)
+                this.setState({
+                    arr:a
+                })
             }
             var arr = this.state.arr.map(v => {
                 if (v.id === id) {
@@ -126,12 +127,12 @@ class shoppingCart extends React.Component {
             this.setState({
                 arr: arr
             })
-            localStorage.wtfbk=JSON.stringify(arr)
+            localStorage.wtfbk = JSON.stringify(arr)
         }
 
         let arrs = this.state.arr;
-        let total=0;
-        arrs.forEach((v)=>{
+        let total = 0;
+        arrs.forEach((v) => {
             total += v.price * v.num;
         })
         this.setState({

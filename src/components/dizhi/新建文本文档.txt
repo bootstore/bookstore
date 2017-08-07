@@ -1,0 +1,59 @@
+import React from 'react';
+import './dizhi.css';
+class Add11 extends React.Component{
+    render(){
+        return(
+            <div className="choose1">
+                <div className="head">
+                    <div className="close">
+                        <img src="img/11.jpg" alt=""/>
+                    </div>
+                    <div className="xian"></div>
+                    <div className="choose">
+                        请选择收货地址
+                    </div>
+                    <div className="menu">
+                        <img src="img/13.jpg" alt=""/>
+                    </div>
+
+                </div>
+                <div className="xiahuaxian">
+
+                </div>
+                <div className="content1">
+                    <a href="/payorder">
+                        <div className="list">
+                            <div className="xingming">
+                                <h1>姓名</h1>
+                            </div>
+                            <div className="dianhua">
+                                <h1>电话</h1>
+                            </div>
+                            <div className="dizhi">
+                                <h1>地址</h1>
+                            </div>
+                            <div className="youxiang">
+                                <h1>邮箱</h1>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div className="foot">
+                    <div className="more1">
+                        <img src="img/15.jpg" alt=""/>
+                    </div>
+                    <h1>新增收货地址</h1>
+                    <div className="jiantou">
+                        <img src="img/16.jpg" alt=""/>
+                    </div>
+                </div>
+
+            </div>
+
+        )
+    }
+
+
+}
+export default Add11;

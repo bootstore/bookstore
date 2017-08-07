@@ -19,7 +19,7 @@ class ShopBox extends React.Component {
                         {/*<div className="right"></div>*/}
                         <div className="center">
                             <span className="home"></span>
-                            <h3><a href="#">基路书店</a></h3>
+                            <h3><a href="#">博雅书城</a></h3>
                         </div>
                         <i className="bianji">编辑</i>
                     </h2>

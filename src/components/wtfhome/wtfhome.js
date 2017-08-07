@@ -29,7 +29,7 @@ class Header extends React.Component {
                     <img src="../../img/wtfout.png" alt=""/>
                 </div>
                 <div className="shu"></div>
-                <p className="wtftitle">基路书店</p>
+                <p className="wtftitle">博雅书城</p>
                 <div className="wtfdiandian">
                     <img src="../../img/wtfdiandian.png" alt=""/>
                 </div>
@@ -411,7 +411,7 @@ class WtfHome extends Component {
     }
     render() {
         // console.log(this.props.lyxgo)
-        let title1 = '基路书店';
+        let title1 = '博雅书城';
         return (
             <div className="wtfhome">
                 <L_add lyxgo={this.props.lyxgo} number={this.state.number} numbers={this.numbers}/>

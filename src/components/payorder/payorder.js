@@ -6,7 +6,7 @@ import './payorder.css';
 
 import gift from './gift.jpg';
 import Header from '../comment/header';
-// import './aa'
+import bg from './01.jpg';
 
 
 class PayList extends React.Component {
@@ -16,19 +16,19 @@ class PayList extends React.Component {
             <div className="d-content">
                 {
                     this.props.data.map(v=>(
-                        <ul className="con">
-                            <li>
+                <ul className="con">
+                    <li>
 
-                                <div>
-                                    <img src={v.img} alt=""/>
-                                </div>
+                        <div>
+                            <img src={v.img} alt=""/>
+                        </div>
 
-                                <div>
+                        <div>
 
                                     <ul key={1}>
                                         <li>
                                             <h1>{v.name}</h1>
-                                            <h2 className="p">￥{v.price}</h2>
+                                            <h2 className="p">￥<p id="price">{v.price}</p></h2>
                                         </li>
                                         <li>
                                             {/*<p>女款10#</p>*/}
@@ -37,37 +37,12 @@ class PayList extends React.Component {
 
                                     </ul>
 
-                                </div>
-                            </li>
-                        </ul>
-                    ))
-                }
-                {/*
-                <ul className="con">
-                    <li>
-
-                        <div></div>
-
-                        <div>
-                            {
-                                this.props.data.map(v=>(
-                                    <ul key={1}>
-                                        <li>
-                                            <h1>{v.name}</h1>
-                                            <h2 className="p">￥{v.price}</h2>
-                                        </li>
-                                        <li>
-                                            <p>女款10#</p>
-                                            <p className="n">x{v.number}</p>
-                                        </li>
-
-                                    </ul>
-                                ))
-                            }
                         </div>
                     </li>
                 </ul>
-*/}
+                    ))
+                }
+
             </div>
         )
     }
@@ -89,7 +64,7 @@ class PayOrder extends React.Component {
                 arr: JSON.parse(localStorage.gj)
             })
             let cc=JSON.parse(localStorage.gj);
-            console.log(cc.number)
+            // console.log(cc.number)
 
         }else {
             this.setState({
@@ -118,13 +93,25 @@ class PayOrder extends React.Component {
         let numss = 0;
         if(arrs.length){
             let a1 = arrs[0];
-            console.log(this.state.arr);
-            console.log(a1);
+            // console.log(this.state.arr);
+            // console.log(a1);
             prices = a1.price;
             numss = a1.number;
         }
         let total = prices * numss;
-        console.log(total);
+
+        if(localStorage.addlist){
+            var add=JSON.parse(localStorage.addlist);
+        }else {
+            add=[{
+                name1:'杜帅',
+                name2:18435106215,
+                name3:11,
+                name4:'北京市中南海一号办公室'
+            }]
+        }
+        console.log(add)
+        // console.log(total);
 
 
         // console.log(a1['name']);
@@ -136,24 +123,41 @@ class PayOrder extends React.Component {
         return (
             <div>
                 <Header title={title1}/>
+                {
+                    add.map(v=>(
+                        <div className="add">
+                            <Link to="/address"></Link>
+                            <div className="shouhuo">
+                                <div>收货人 :</div>
+                                <div>{v.name1}</div>
+                                <div>{v.name2}</div>
+                            </div>
+                            <div className="address">
+                                <div>收货方式 :</div>
+                                <div>{v.name4}</div>
+                            </div>
 
-                <div className="add">
-                    <Link to="/address"></Link>
-                    <div className="shouhuo">
-                        <div>收货人 :</div>
-                        <div>杜帅</div>
-                        <div>18435106215</div>
-                    </div>
-                    <div className="address">
-                        <div>收货方式 :</div>
-                        <div>山西省长治市武乡县</div>
-                    </div>
+                        </div>
+                    ))
+                }
 
-                </div>
+                {/*<div className="add">*/}
+                    {/*<Link to="/address"></Link>*/}
+                    {/*<div className="shouhuo">*/}
+                        {/*<div>收货人 :</div>*/}
+                        {/*<div>杜帅</div>*/}
+                        {/*<div>18435106215</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="address">*/}
+                        {/*<div>收货方式 :</div>*/}
+                        {/*<div>山西省长治市武乡县</div>*/}
+                    {/*</div>*/}
+
+                {/*</div>*/}
                 <div className="tiaowen"></div>
                 <div className="title">
                     <img src={gift} alt=""/>
-                    <p>基路书店</p>
+                    <p>博雅书城</p>
                 </div>
                 <PayList data={this.state.arr}/>
                 <div className="peisong">

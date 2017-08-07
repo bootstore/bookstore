@@ -11,7 +11,7 @@ const zjt_header = (
         <div className="zjt_header_wrap">
             <div className="zjt_header_back">
                 <Link to='/' className="zjt_back_img"></Link>
-                <div className="zjt_word">基路书店</div>
+                <div className="zjt_word">博雅书城</div>
             </div>
             <div className="zjt_header_more"></div>
         </div>
@@ -45,7 +45,7 @@ class Zjt_Conlist extends Component {
                 <div className="zjt_conwrap">
                     <div className="zjt_conbox1">
                         <div className="zjt_conleft">
-                            <p>店铺：基路商城</p>
+                            <p>店铺：博雅书城</p>
                             <p className="zjt_conleftp">等待买家付款</p>
                         </div>
                         <div className="zjt_conleftb">
@@ -102,7 +102,7 @@ class Zjt_fuk extends Component {
                 <div className="zjt_conwrap">
                     <div className="zjt_conbox1">
                         <div className="zjt_conleft">
-                            <p>店铺：基路商城</p>
+                            <p>店铺：博雅书城</p>
                             <p className="zjt_conleftp">等待买家付款</p>
                         </div>
                         <div className="zjt_conleftb">
@@ -159,7 +159,7 @@ class Zjt_Fahuo extends Component {
                 <div className="zjt_conwrap">
                     <div className="zjt_conbox1">
                         <div className="zjt_conleft">
-                            <p>店铺：基路商城</p>
+                            <p>店铺：博雅书城</p>
                             <p className="zjt_conleftp">买家已付款</p>
                         </div>
                         <div className="zjt_conleftb">
@@ -244,7 +244,7 @@ class Zjt_wanc extends Component {
                 <div className="zjt_conwrap">
                     <div className="zjt_conbox1">
                         <div className="zjt_conleft">
-                            <p>店铺：基路商城</p>
+                            <p>店铺：博雅书城</p>
                             <p className="zjt_conleftp">等待买家付款</p>
                         </div>
                         <div className="zjt_conleftb">

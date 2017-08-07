@@ -15,6 +15,8 @@ import GoodsDetails from "./components/goodsDetails/goodsDetails";
 import Wtflogin from './components/wtflogin/wtflogin';
 import WtfRegister from './components/wtflogin/WtfRegister';
 import Zjt_pay from './components/zjt_pay/zjt_pay';
+import Add11 from './components/dizhi/add11';
+
 
 class App extends React.Component {
     constructor(){
@@ -187,6 +189,7 @@ class App extends React.Component {
                     <Route exact path="/WtfRegister" render={()=><WtfRegister/>}/>
                     <Route path="/address" component={Dizhi}/>
                     <Route path="/detail/:id" component={GoodsDetails}/>
+                    <Route path="/add11" component={Add11}/>
                 </div>
             </Router>
         );
